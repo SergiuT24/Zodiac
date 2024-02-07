@@ -10,8 +10,8 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
+		<header id="open" class="header">
+			<div id="close" class="header__container">
 				<div class="header__column header__column_logo">
 					<a href="" class="header__logo-z">Z</a>
 					<a href="" class="header__logo">Zodiac</a>
@@ -20,26 +20,21 @@
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="" class="menu__link">Principala</a>
+								<li class="menu__item effect-parent"><a href="" class="menu__link effect-child">Principala</a>
 								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Afla Zodia</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Horoscop</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Contacte</a>
-								</li>
+								<li class="menu__item"><a href="" class="menu__link effect-child">Afla Zodia</a></li>
+								<li class="menu__item"><a href="" class="menu__link effect-child">Horoscop</a></li>
+								<li class="menu__item"><a href="" class="menu__link effect-child">Contacte</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 				<div class="header__column header__column_symbol">
-					<a href="" class="header__symbol-link">
+					<div class="header__symbol-box">
 						<img class="header__symbol" src="/public/icons/symbol.svg" alt="Stars">
-					</a>
+					</div>
+					<a href="#open" class="icon-menu"><span></span></a>
+					<a href="#close" class="close-icon-menu"></a>
 				</div>
 			</div>
 		</header>
