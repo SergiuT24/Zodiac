@@ -85,10 +85,39 @@
 			font-size: 35px;
 			letter-spacing: 4px;
 			text-transform: uppercase;
-			&:hover {
-				transition: 1s ease;
-				color: #55acee;
+			position:relative;
+			z-index:1;
+			text-align: center;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: linear-gradient(
+         to right,
+         #f3d3ac,
+         #f3d3ac 50%,
+         #fff 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      transition: all 0.3s ease-in-out;
+      &:before{
+			display:block;
+			content:'';
+			width:0;
+			height:3px;
+			bottom:5px;
+			left:0;
+			bottom:-3px;
+			z-index:0;
+			background:#f3d3ac;
+			position:absolute;
+			transition: all 0.3s ease-in-out;
+      }
+      &:hover{
+			background-position: 0%;
+			&:before{
+			width:100%;
 			}
+      }
+
 		}
 		// .header__menu
 		&__menu {

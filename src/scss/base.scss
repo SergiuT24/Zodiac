@@ -1,6 +1,7 @@
 //========================================================================================================================================================
 // Base style
 body {
+	color: #fff;
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(to bottom, #001e28, #1f4037);
@@ -32,6 +33,7 @@ body {
 /* MOBILE SMALL*/
 @media (max-width: 479.98px) {}
 a {
+	color: #fff;
 	text-decoration: none;
 }
 ul,
