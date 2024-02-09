@@ -1,0 +1,64 @@
+//========================================================================================================================================================
+// Default popup class
+.popup {
+}
+.my-popup {
+}
+.fade-out {
+}
+.popup-content {
+	@extend %baseFont;
+	padding: 100px 0px 100px;
+	flex-direction: row;
+	align-items: center;
+}
+.popup-header {
+	width: 60%;
+	text-align: start;
+	margin: 0px;
+}
+.popup-title {
+	margin: 0px;
+}
+.popup-close {
+}
+//========================================================================================================================================================
+// My popup class in body
+.popup-body {
+	text-align: start;
+	// .popup-body_sign
+	&_sign {
+		font-weight: 800;
+		font-size: 30px;
+		color: #17484a;
+	}
+	// .popup-body_day
+	&_day {
+		color: #17484a;
+		font-size: 19px;
+		margin: 0px 0px 20px 0px;
+		font-weight: 600;
+	}
+	p {
+		color: #17484a;
+		font-size: 15px;
+	}
+}
+//========================================================================================================================================================
+// My popup class
+.pupup-imb-box {
+	position: relative;
+	width: 250px;
+	height: 250px;
+}
+.pupup-img-sign {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.popup-title-sign {
+	color: #17484a;
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+}

@@ -6,6 +6,7 @@
 	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Vite App</title>
+	<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
 </head>
 
 <body>
@@ -39,29 +40,37 @@
 			</div>
 		</header>
 		<main class="page">
+			<div class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<h1 class="main-block__title">Zodii și Horoscop: Ghidul tău zilnic de zodii și horoscop</h1>
+						<div class="main-block__text">Alege-ți semnul zodiacal:</div>
+					</div>
+				</div>
+			</div>
 			<section class="page__horoscope horoscope">
 				<div class="horoscope__container">
 					<div class="horoscope__body">
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Berbec" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Aries.png" alt="Aries">
+									<img src="/public/img/Berbec.png" alt="Berbec">
 								</div>
 								<h3 class="sign-zodiac__name">Berbec</h3>
 								<div class="sign-zodiac__date">Mar 21 - Apr 20</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Taur" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Taurus.png" alt="Taurus">
+									<img src="/public/img/Taur.png" alt="Taur">
 								</div>
 								<h3 class="sign-zodiac__name">Taur</h3>
 								<div class="sign-zodiac__date">Apr 21 - Mai 20</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Gemeni" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
 									<img src="/public/img/Gemeni.png" alt="Gemeni">
 								</div>
@@ -70,61 +79,61 @@
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Rac" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Cancer.png" alt="Cancer">
+									<img src="/public/img/Rac.png" alt="Rac">
 								</div>
 								<h3 class="sign-zodiac__name">Rac</h3>
 								<div class="sign-zodiac__date">Iun 22 - Iul 22</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Leu" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Leo.png" alt="Leo">
+									<img src="/public/img/Leu.png" alt="Leu">
 								</div>
 								<h3 class="sign-zodiac__name">Leu</h3>
 								<div class="sign-zodiac__date">Iul 23 - Aug 22</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Fecioară" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Virgo.png" alt="Virgo">
+									<img src="/public/img/Fecioară.png" alt="Fecioară">
 								</div>
 								<h3 class="sign-zodiac__name">Fecioară</h3>
 								<div class="sign-zodiac__date">Aug 23 - Sep 22</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Balanță" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Libra.png" alt="Libra">
+									<img src="/public/img/Balanță.png" alt="Balanță">
 								</div>
 								<h3 class="sign-zodiac__name">Balanță</h3>
 								<div class="sign-zodiac__date">Sep 23 - Oct 22</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Scorpion" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Scorpio.png" alt="Scorpio">
+									<img src="/public/img/Scorpion.png" alt="Scorpion">
 								</div>
 								<h3 class="sign-zodiac__name">Scorpion</h3>
 								<div class="sign-zodiac__date">Oct 23 - Noi 21</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Săgetător" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Sagitarius.png" alt="Sagitarius">
+									<img src="/public/img/Săgetător.png" alt="Săgetător">
 								</div>
 								<h3 class="sign-zodiac__name">Săgetător</h3>
 								<div class="sign-zodiac__date">Noi 22 - Dec 21</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Capricorn" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
 									<img src="/public/img/Capricorn.png" alt="Capricorn">
 								</div>
@@ -133,20 +142,20 @@
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Vărsător" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Aquarius.png" alt="Aquarius">
+									<img src="/public/img/Vărsător.png" alt="Vărsător">
 								</div>
 								<h3 class="sign-zodiac__name">Vărsător</h3>
 								<div class="sign-zodiac__date">Ian 20 - Feb 18</div>
 							</a>
 						</div>
 						<div class="horoscope__column">
-							<a href="" class="horoscope__sign sign-zodiac">
+							<a id="Pește" class="horoscope__sign sign-zodiac">
 								<div class="sign-zodiac__icon">
-									<img src="/public/img/Pisces.png" alt="Pisces">
+									<img src="/public/img/Pește.png" alt="Pește">
 								</div>
-								<h3 class="sign-zodiac__name">Pești</h3>
+								<h3 class="sign-zodiac__name">Pește</h3>
 								<div class="sign-zodiac__date">Feb 19 - Mar 20</div>
 							</a>
 						</div>
@@ -155,7 +164,6 @@
 			</section>
 		</main>
 	</div>
-
 	<script type="module" src="/src/js/main.js"></script>
 </body>
 

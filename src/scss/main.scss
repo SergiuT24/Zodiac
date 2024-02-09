@@ -1,10 +1,70 @@
 .page {
 	padding: 150px 0px 0px 0px;
+	// .page__main-block
+	&__main-block {
+		margin: 0px 0px 30px 0px;
+	}
+	@media (max-width: 479.98px) {
+		.page {
+			padding: 50px 0px 0px 0px;
+		}
+		&__main-block {
+			margin: 0px 0px 20px 0px;
+		}
+	}
 	// .page__horoscope
 	&__horoscope {
 	}
 }
+@media (max-width: 479.98px) {
+	.page {
+		padding: 90px 0px 0px 0px;
+	}
+}
 //========================================================================================================================================================
+// Main block 
+.main-block {
+	// .main-block__container
+	&__container {
+	}
+	// .main-block__body
+	&__body {
+	}
+	// .main-block__title
+	&__title {
+		display: flex;
+		justify-content: center;
+		font-size: 35px;
+		margin: 0px 0px 30px 0px;
+	}
+	// .main-block__text
+	&__text {
+		display: flex;
+		font-size: 24px;
+		justify-content: center;
+	}
+	@media (max-width: 1087px) {
+		&__title {
+			font-size: 30px;
+		}
+		&__text {
+			font-size: 20px;
+		}
+	}
+	@media (max-width: 767.98px) {
+		&__title {
+			font-size: 25px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+	@media (max-width: 479.98px) {
+		&__title {
+			font-size: 22px;
+		}
+	}
+}
 // Horoscope section
 .horoscope {
 	// .horoscope__container
@@ -13,14 +73,23 @@
 	// .horoscope__body
 	&__body {
 		display: grid;
-		gap: 50px;
-		grid-template-columns: repeat(auto-fit,minmax(170px, 1fr));
+		grid-template-columns: repeat((auto-fit),minmax(130px, 1fr));
+		gap: 30px;
+	}
+	@media (min-width: 479.98px) {
+		&__container {
+		}
+		&__body {
+			grid-template-columns: repeat(auto-fit,minmax(170px, 1fr));
+		}
 	}
 	// .horoscope__column
 	&__column {
-		background-color: #1a1720;
-		box-shadow: 1px 8px 20px rgba(88, 126, 236, 0.18);
-		border: 1px solid #f7e3cb;
+		cursor: pointer;
+		border-radius: 15px;
+		background-color: #17484a;
+		box-shadow: 0px 8px 20px rgba(88, 126, 236, 0.18);
+		border: 2px solid #3a7b72;
 	}
 	// .horoscope__sign
 	&__sign {
@@ -30,11 +99,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// .sign-zodiac__icon
 	&:hover {
-		opacity: 0.9;
+		opacity: 0.8;
 	}
+	// .sign-zodiac__icon
 	&__icon {
+		align-self: center;
 		position: relative;
 		width: 165px;
 		height: 165px;
@@ -42,10 +112,16 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(40%);
+			filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
 			&:hover {
-				opacity: 0.7;
+				opacity: 0.5;
 			}
+		}
+	}
+	@media (max-width: 479.98px) {
+		&__icon {
+			width: 100px;
+			height: 100px;
 		}
 	}
 	// .sign-zodiac__name
