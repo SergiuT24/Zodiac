@@ -1,7 +1,7 @@
 //========================================================================================================================================================
 .header {
-	padding: 10px 0px 5px;
-	border-bottom: 1px solid;
+	padding: 10px 0px 10px;
+	border-bottom: 1px solid #1f4037;
 	color: $mainWhite;
 	position: absolute;
 	width: 100%;
@@ -14,7 +14,7 @@
 		// .header__container
 		&__container {
 			display: flex;
-			min-height: 100px;
+			// min-height: 100px;
 			align-items: center;
 			gap: 10px;
 		}
@@ -44,7 +44,7 @@
 			border-bottom-right-radius: 30px;
 			padding: 5px 15px;
 			color: #D7DDE8;
-			font-size: 60px;
+			font-size: 50px;
 			transition:all 1s;
 			&:after,&:before{
 				content:" ";
@@ -82,7 +82,7 @@
 		&__logo {
 			position: relative;
 			color: $mainWhite;
-			font-size: 35px;
+			font-size: 28px;
 			letter-spacing: 4px;
 			text-transform: uppercase;
 			position:relative;
@@ -124,13 +124,13 @@
 		}
 			// .header__symbol-box
 		&__symbol-box {
-			position: relative;
-			width: 100px;
-			height: 100px;
+			// position: relative;
+			width: 80px;
+			height: 80px;
 		}	
 		// .header__symbol
 		&__symbol {
-			position: absolute;
+			// position: absolute;
 			width: 100%;
 			height: 100%;
 			// object-fit: cover;

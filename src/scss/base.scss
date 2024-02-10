@@ -3,7 +3,6 @@
 body {
 	color: #fff;
 	width: 100vw;
-	height: 100vh;
 	background: linear-gradient(to bottom, #001e28, #1f4037);
 	@extend %baseFont;
 }
@@ -44,4 +43,13 @@ li {
 ul {
 	margin: 0px;
 	padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
 }

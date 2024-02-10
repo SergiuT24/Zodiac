@@ -15,7 +15,7 @@ zodiacSigns.forEach(signName => {
 		id: "my-popup",
 		title: `
 		<div class="pupup-imb-box">
-		<img class="pupup-img-sign" src="/public/img/${signName}.png" alt="${signName}">
+		<img class="pupup-img-sign" src="/img/${signName}.png" alt="${signName}">
 		</div>
 		<div class="popup-title-sign">${signName}</div>
 		<div class="sign-zodiac__date">Mar 21 - Apr 20</div>
