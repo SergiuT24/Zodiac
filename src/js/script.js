@@ -22,13 +22,11 @@ zodiacSigns.forEach(signName => {
 		<div class="pupup-imb-box">
 		<img class="pupup-img-sign" src="/img/${signName}.png" alt="${signName}">
 		</div>
-		<div class="popup-title-sign">${signName}</div>
-		<div class="sign-zodiac__date">Mar 21 - Apr 20</div>
 		`,
 		content: `
 		<div class="popup-body_sign">Zodia: ${signName}</div>
 		<div class="popup-body_day">Horoscopul zilnic pentru ${romanianDate}:</div>
-		<p>${horoscopePrediction[formattedDate][signName]}</p>
+		<div class="popup-body_text">${horoscopePrediction[formattedDate][signName]}</div>
 		`,
 	});
 	signElement.addEventListener('click', () => {
