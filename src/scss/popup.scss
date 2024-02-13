@@ -23,6 +23,8 @@
 //========================================================================================================================================================
 // My popup class in body
 .popup-body {
+	margin-left: 0px;
+	margin-right: 0px;
 	p {
 		display: none;
 	}
@@ -53,15 +55,15 @@
 	}
 	@media (max-width: 479.98px) {
 		&_sign {
-			font-size: 18px;
+			font-size: 22px;
 		}
 		// .popup-body_day
 		&_day {
-			font-size: 14px;
-			margin: 10px 0px 0px 0px;
+			font-size: 15px;
+			margin: 20px 0px 0px 0px;
 		}
 		&_text {
-			margin-top: 10px;
+			margin-top: 15px;
 			font-size: 17px;
 	}
 }
@@ -93,11 +95,10 @@
 }
 @media (max-width: 479.98px) {
 	.pupup-imb-box {
-		width: 100px;
-		height: 100px;
+		display: none;
 	}
 	.popup-content {
-		padding: 5px 0px;
-		flex-direction: column;
+		padding: 25px 3px;
+		flex-direction: row;
 	}
 }

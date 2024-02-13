@@ -25,7 +25,7 @@ zodiacSigns.forEach(signName => {
 		`,
 		content: `
 		<div class="popup-body_sign">Zodia: ${signName}</div>
-		<div class="popup-body_day">Horoscopul zilnic pentru ${romanianDate}:</div>
+		<div class="popup-body_day">Horoscopul zilnic: ${romanianDate}</div>
 		<div class="popup-body_text">${horoscopePrediction[formattedDate][signName]}</div>
 		`,
 	});
