@@ -45,11 +45,12 @@
 		font-weight: 600;
 	}
 	&_text {
-		text-align: center;
+		text-align: start;
 		@extend %popupFont;
+		font-weight: 300;
 		margin-top: 15px;
 		margin-bottom: 0px;
-		text-align: start;
+		padding: 0px 15px;
 		color: #17484a;
 		font-size: 18px;
 	}
