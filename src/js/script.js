@@ -1,4 +1,9 @@
 //========================================================================================================================================================
+// import json-horoscope, to use "horoscopePrediction[key][key]"
+import horoscopePrediction from '../js/horoscope-prediction.json' assert { type: 'json' };
+// Date in format yyyy-mm-dd with dayjs npm
+import dayjs from 'dayjs';
+const formattedDate = dayjs().format('YYYY-MM-DD');
 // Current date
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const romanianDate = new Date().toLocaleDateString('ro-RO', options);
@@ -23,10 +28,7 @@ zodiacSigns.forEach(signName => {
 		content: `
 		<div class="popup-body_sign">Zodia: ${signName}</div>
 		<div class="popup-body_day">Horoscopul zilnic pentru ${romanianDate}:</div>
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit soluta distinctio enim fugit,
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit soluta distinctio enim fugit,
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit soluta distinctio enim fugit, 
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit soluta distinctio enim fugit, 
+		<p>${horoscopePrediction[formattedDate][signName]}</p>
 		`,
 	});
 	signElement.addEventListener('click', () => {
