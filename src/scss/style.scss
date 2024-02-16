@@ -1,23 +1,15 @@
 @import 'normalize.css';
-//Fonts
+// FONTS
 @import 'fonts.scss';
-// Base Style
+// BASE STYLE
 @import 'base.scss';
-// Variables
+// VARIABLES
 @import 'variables.scss';
-// Common Styles
+// COMMON STYLES
 @import 'common.scss';
-//========================================================================================================================================================
-.wrapper {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-//========================================================================================================================================================
-// Header
+// HEADER STYLE
 @import 'header.scss';
-// Main
+// MAIN
 @import 'main.scss';
-// Popup styles
+// POPUP
 @import 'popup.scss';

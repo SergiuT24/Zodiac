@@ -10,18 +10,17 @@ navOpen.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
 	navBody.classList.remove('menu__show')
 });
-
-// import json-horoscope, to use "horoscopePrediction[key][key]"
+//========================================================================================================================================================
+// JSON-HOROSCOPE to use "horoscopePrediction[key][key]"
 import horoscopePrediction from '../js/horoscope-prediction.json' assert { type: 'json' };
-// Date in format yyyy-mm-dd with dayjs npm
+// NPM PACKAGE FOR DATE
 import dayjs from 'dayjs';
 const formattedDate = dayjs().format('YYYY-MM-DD');
-// Current date
+// CURRENT DATE
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const romanianDate = new Date().toLocaleDateString('ro-RO', options);
 //========================================================================================================================================================
-// Popup section
-// My popup function
+// POPUPSECTION
 const zodiacSigns = [
 	"Berbec", "Taur", "Gemeni", "Rac", "Leu", "Fecioară",
 	"Balanță", "Scorpion", "Săgetător", "Capricorn", "Vărsător", "Pește"
