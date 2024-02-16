@@ -3,7 +3,7 @@
 body {
 	color: #fff;
 	width: 100vw;
-	background: linear-gradient(to bottom, #001e28, #1f4037);
+	background: linear-gradient(to bottom, #1f4037, #001e28);
 	@extend %baseFont;
 }
 [class*="__container"] {

@@ -8,7 +8,7 @@
 }
 .popup-content {
 	@extend %baseFont;
-	padding: 50px 10px 50px;
+	padding: 40px 10px 40px;
 	flex-direction: row;
 	align-items: center;
 }
@@ -23,8 +23,8 @@
 //========================================================================================================================================================
 // My popup class in body
 .popup-body {
-	margin-left: 0px;
-	margin-right: 0px;
+	max-height: calc(100vh - 60px);
+	overflow-y: scroll;
 	p {
 		display: none;
 	}
@@ -50,9 +50,10 @@
 		font-weight: 300;
 		margin-top: 15px;
 		margin-bottom: 0px;
+		line-height: 1.5;
 		padding: 0px 3px;
 		color: #17484a;
-		font-size: 18px;
+		font-size: 17px;
 	}
 	@media (max-width: 479.98px) {
 		&_sign {
@@ -61,12 +62,11 @@
 		// .popup-body_day
 		&_day {
 			font-size: 15px;
-			margin: 20px 0px 0px 0px;
+			margin: 15px 0px 0px 0px;
 		}
 		&_text {
-			margin-top: 15px;
-			font-size: 17px;
-	}
+			font-size: 16px;
+		}
 }
 }
 //========================================================================================================================================================

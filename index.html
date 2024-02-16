@@ -3,44 +3,22 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Vite App</title>
+	<!--=============== REMIXICONS ===============-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+	<title>Zodiac</title>
+	<!--=============== POPUP-JS ===============-->
 	<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
 </head>
 
 <body>
 	<div class="wrapper">
-		<header id="open" class="header">
-			<div id="close" class="header__container">
-				<div class="header__column header__column_logo">
-					<a href="" class="header__logo-z">Z</a>
-					<a href="" class="header__logo">odiac</a>
-				</div>
-				<div class="header__column header__column_wide">
-					<div class="header__menu menu">
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item effect-parent"><a href="" class="menu__link effect-child">Principala</a>
-								</li>
-								<li class="menu__item"><a href="" class="menu__link effect-child">Afla Zodia</a></li>
-								<li class="menu__item"><a href="" class="menu__link effect-child">Horoscop</a></li>
-								<li class="menu__item"><a href="" class="menu__link effect-child">Contacte</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="header__column header__column_symbol">
-					<div class="header__symbol-box">
-						<img class="header__symbol" src="/public/icons/symbol.svg" alt="Stars">
-					</div>
-					<a href="#open" class="icon-menu"><span></span></a>
-					<a href="#close" class="close-icon-menu"></a>
-				</div>
-			</div>
-		</header>
+		<!-- HEADER HTML -->
+		<load src="src/html/header.html" />
+		<!-- MAIN PAGE -->
 		<main class="page">
 			<div class="page__main-block main-block">
 				<div class="main-block__container">

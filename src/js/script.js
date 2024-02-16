@@ -1,4 +1,16 @@
-//========================================================================================================================================================
+// SHOW MENU
+const navBody = document.getElementById('menu'),
+	navOpen = document.getElementById('menu-open'),
+	navClose = document.getElementById('menu-close');
+// OPEN MENU
+navOpen.addEventListener('click', () => {
+	navBody.classList.add('menu__show')
+});
+// CLOSE MENU
+navClose.addEventListener('click', () => {
+	navBody.classList.remove('menu__show')
+});
+
 // import json-horoscope, to use "horoscopePrediction[key][key]"
 import horoscopePrediction from '../js/horoscope-prediction.json' assert { type: 'json' };
 // Date in format yyyy-mm-dd with dayjs npm
@@ -25,7 +37,7 @@ zodiacSigns.forEach(signName => {
 		`,
 		content: `
 		<div class="popup-body_sign">Zodia: ${signName}</div>
-		<div class="popup-body_day">Horoscopul zilnic: ${romanianDate}</div>
+		<div class="popup-body_day">Horoscopul: ${romanianDate}</div>
 		<div class="popup-body_text">${horoscopePrediction[formattedDate][signName]}</div>
 		`,
 	});
