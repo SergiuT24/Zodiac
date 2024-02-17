@@ -1,44 +1,8 @@
 // MENU LINK HOVER
-.effect-parent {
-	&:hover &.effect-child {
-		transform: scale(1.5);
-		opacity: 0.2;
-		filter: blur(5px);
-	}
-}
 .effect-child {
 	display: block;
-	position: relative;
 	transition: 0.5s;
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: black;
-		transition: transform 0.5s;
-		transform-origin: right;
-		transform: scaleX(0);
-		z-index: -1;
-	}
 	&:hover {
-		transform: scale(1.6);
-		opacity: 1;
-		filter: blur(0);
-		text-decoration: none;
-		color: #fff;
-		&:before {
-		transition: transform 0.5s;
-		transform-origin: left;
-		transform: scaleX(1);
-		}
-	}
-	@media (max-width: 1087px) {
-		&:hover {
-			transform: scale(1.3);
-		}
+		transform: scale(1.1);
 	}
 }
-//========================================================================================================================================================
