@@ -19,8 +19,8 @@
 	// .page__horoscope
 	&__horoscope {
 	}
-	// .page__qoute-block
-	&__qoute-block {
+	// .page__quote-block
+	&__quote-block {
 	}
 }
 @media (max-width: 479.98px) {
@@ -146,12 +146,12 @@
 	}
 }
 // QOUTE SECTION
-.qoute-block {
-	// .qoute-block__container
+.quote-block {
+	// .quote-block__container
 	&__container {
 		margin-top: 130px;
 	}
-	// .qoute-block__body
+	// .quote-block__body
 	&__body {
 		@extend %specialElite;
 		display: flex;
@@ -160,7 +160,7 @@
 		justify-content: center;
 		opacity: 0.8;
 	}
-	// .qoute-block__day
+	// .quote-block__day
 	&__day {
 		text-align: center;
 		font-size: 25px;
@@ -188,7 +188,7 @@
 			bottom: -20px;
 		}
 	}
-	// .qoute-block__author
+	// .quote-block__author
 	&__author {
 		line-height: 3;
 		font-size: 20px;
