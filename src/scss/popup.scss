@@ -6,10 +6,15 @@
 .fade-out {
 }
 .popup-content {
+	background: rgb(13 21 38 / 48%) !important;
+	border-radius: 24px !important;
 	@extend %baseFont;
-	padding: 40px 10px 40px;
+	padding: 82px 43px;
+	backdrop-filter: blur(20px);
 	flex-direction: row;
 	align-items: center;
+	box-shadow: 0px 12px 20px 5px #060c1f;
+	border: 4px solid #eee3 !important;
 }
 .popup-header {
 	width: auto;
@@ -18,6 +23,7 @@
 	margin: 0px;
 }
 .popup-close {
+	color: $mainWhite !important;
 }
 //========================================================================================================================================================
 // MY POPUP CLASS IN BODY
@@ -34,14 +40,14 @@
 	&_sign {
 		font-weight: 800;
 		font-size: 30px;
-		color: #17484a;
+		color: $mainWhite;
 	}
 	// .popup-body_day
 	&_day {
-		color: #17484a;
 		font-size: 19px;
 		margin: 10px 0px 0px 0px;
 		font-weight: 600;
+		color: $mainWhite;
 	}
 	&_text {
 		text-align: start;
@@ -51,7 +57,7 @@
 		margin-bottom: 0px;
 		line-height: 1.5;
 		padding: 0px 3px;
-		color: #17484a;
+		color: $mainWhite;
 		font-size: 17px;
 	}
 	@media (max-width: 479.98px) {
@@ -76,6 +82,7 @@
 }
 .pupup-img-sign {
 	width: 100%;
+	filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 // MEDIA
 @media (max-width: 1087px) {
