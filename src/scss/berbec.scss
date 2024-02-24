@@ -1,0 +1,98 @@
+.wrapper {
+	// .wrapper__berbec
+	&__berbec {
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		background: url(/public/img/berbec-page/background.jpg);
+		background-position: center;
+		z-index: 4;
+		.header {
+			box-shadow: none;
+		}
+	}
+}
+.berbec {
+	// .berbec__aries-dates
+	&__aries-dates {
+		padding-top: 100px;
+	}
+	// .berbec__about-aries
+	&__about-aries {
+		margin: 100px 0px 0px 0px;
+	}
+}
+// MAIN-ARIES-DATES
+.aries-dates {
+	// .aries-dates__container
+	&__container {
+	}
+	// .aries-dates__body
+	&__body {
+	}
+	// .aries-dates__title
+	&__title {
+		margin: 80px 0px 0px 0px;
+		text-align: center;
+		font-size: 32px;
+		span {
+			font-weight: bold;
+		}
+	}
+	// .aries-dates__mutable
+	&__mutable {
+		margin: 20px 0px 0px 0px;
+	}
+}
+.mutable-dates {
+	// .mutable-dates__menu
+	&__menu {
+	}
+}
+.mutabled-dates {
+	// .mutabled-dates__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+	}
+	// .mutabled-dates__item
+	&__item {
+		border: 1px solid #fff;
+		border-radius: 20px;
+		padding: 7px;
+	}
+	// .mutabled-dates__link
+	&__link {
+	}
+}
+// ARIES-ABOUT
+.aries-about {
+	// .aries-about__container
+	&__container {
+	}
+	// .aries-about__body
+	&__body {
+		display: flex;
+	}
+	// .aries-about__column
+	&__column {
+		flex: 1;
+		width: 50%;
+	}
+	// .aries-about__photo
+	&__photo {
+		display: flex;
+		justify-content: center;
+	}
+	// .aries-about__name
+	&__name {
+	}
+	// .aries-about__date
+	&__date {
+	}
+	// .aries-about__general-description
+	&__general-description {
+	}
+}
