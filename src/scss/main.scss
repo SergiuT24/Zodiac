@@ -31,6 +31,9 @@
 @media (max-width: 479.98px) {
 	.page {
 		margin: 110px 0px 110px 0px;
+		&__traits {
+			margin-top: 100px;
+		}
 	}
 }
 //========================================================================================================================================================
@@ -160,7 +163,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		&:first-child{
+	}
+	@media (min-width: 479.98px) {
+		&__body {
 			align-items: center;
 		}
 	}
@@ -247,7 +252,7 @@
 	&__block-select {
 		border-radius: 24px;
 		background: rgb(13 21 38 / 48%);
-		box-shadow: 0px 4px 10px 2px #060c1f;
+		box-shadow: 0 2px 16px hsla(0, 0%, 100%, 0.15);
 		border: 1px solid #eee3;
 	}
 }
@@ -265,7 +270,12 @@
 }
 .choose-sign {
 	position: relative;
-	display: inline-block;
+	display: inline-flex;
+	gap: 20px;
+	:first-child {
+		display: flex;
+		align-items: center;
+	}
 	&::after {
 		content: '\25BC';
 		position: absolute;
@@ -282,7 +292,6 @@
 	// .choose-sign__title
 	&__title {
 		font-size: 16px;
-		padding-right: 15px;
 		opacity: 0.9;
 	}
 	// .choose-sign__select
@@ -297,6 +306,21 @@
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
+	}
+}
+// Mobile CHOOSE_SIGN
+@media (max-width: 767.98px) {
+	.choose-sign {
+		flex-direction: column;
+		align-items: center;
+		&::after {
+			top: 40px;
+			right: 1px;
+			padding: 15.5px;
+		}
+		&__select {
+			width: 220px;
+		}
 	}
 }
 .selected {
@@ -315,7 +339,7 @@
 	&__zodiac {
 		border-radius: 24px;
 		background: rgb(13 21 38 / 48%);
-		box-shadow: 0px 4px 10px 2px #060c1f;
+		box-shadow: 0 2px 16px hsla(0, 0%, 100%, 0.15);
 		border: 1px solid #eee3;
 	}
 }
@@ -349,6 +373,17 @@
 			font-size: 20px
 		}
 	}
+	@media (max-width: 479.98px) {
+		&__image {
+			display: none;
+		}
+		&__text {
+			font-size: 15px;
+			span {
+				font-size: 18px;
+			}
+		}
+	}
 }
 .match {
 	grid-column: span 1;
@@ -369,7 +404,8 @@
 		display: flex;
 		justify-content: center;
 		gap: 20px;
-		padding: 10px 20px 0px 20px;
+		// padding: 10px 20px 0px 20px;
+		padding: 15px 16px 20px;
 	}
 }
 .box-content {
@@ -377,6 +413,7 @@
 	&__column {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: 10px;
 	}
 	// .box-content__title
