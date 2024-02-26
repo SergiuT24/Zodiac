@@ -10,6 +10,34 @@ navOpen.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
 	navBody.classList.remove('menu__show')
 });
+// SHOW SUBMENU-ZODIAC
+const zodiacShowLink = document.getElementById('zodiac-subnav');
+const zodiacHiddenBlock = document.getElementById('hidden-subnav');
+function showZodiacHiddenBlock() {
+	zodiacHiddenBlock.classList.add('show');
+}
+function hideZodiacHiddenBlock() {
+	zodiacHiddenBlock.classList.remove('show');
+}
+// For pc
+zodiacShowLink.addEventListener('mouseenter', showZodiacHiddenBlock);
+zodiacShowLink.addEventListener('mouseleave', () => {
+	setTimeout(() => {
+		if (!zodiacHiddenBlock.matches(':hover')) {
+			hideZodiacHiddenBlock();
+		}
+	}, 300);
+});
+// For mobile
+zodiacShowLink.addEventListener('click', () => {
+	if (zodiacHiddenBlock.classList.contains('show')) {
+		hideZodiacHiddenBlock();
+	} else {
+		showZodiacHiddenBlock();
+	}
+});
+zodiacHiddenBlock.addEventListener('mouseleave', hideZodiacHiddenBlock);
+zodiacHiddenBlock.addEventListener('click', hideZodiacHiddenBlock);
 //========================================================================================================================================================
 // JSON-HOROSCOPE to use "horoscopePrediction[key][key]"
 import horoscopePrediction from '../js/horoscope-prediction.json' assert { type: 'json' };

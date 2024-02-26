@@ -1,0 +1,330 @@
+.astrology-wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background: url(/public/img/berbec-page/background.jpg);
+	background-position: center;
+	z-index: 4;
+	.header {
+		box-shadow: none;
+	}
+}
+.astrology {
+	// .astrology__zodiac-dates
+	&__zodiac-dates {
+		padding-top: 80px;
+	}
+	// .astrology__about-zodiac
+	&__about-zodiac {
+		margin: 80px 0px 0px 0px;
+	}
+	// .astrology__dayle-zodiac
+	&__dayle-zodiac {
+		margin: 100px 0px 0px 0px;
+	}
+	// .astrology__facts-zodiac
+	&__facts-zodiac {
+		margin: 100px 0px 0px 0px;
+	}
+	// .astrology__motto-zodiac
+	&__motto-zodiac {
+		margin: 100px 0px 100px 0px;
+	}
+}
+// ZODIAC MENU DATES
+.zodiac-dates {
+	// .zodiac-dates__container
+	&__container {
+	}
+	// .zodiac-dates__body
+	&__body {
+	}
+	// .zodiac-dates__title
+	&__title {
+		margin: 80px 0px 0px 0px;
+		text-align: center;
+		font-size: 32px;
+		span {
+			font-weight: bold;
+		}
+	}
+	// .zodiac-dates__mutable
+	&__mutable {
+		margin: 30px 0px 0px 0px;
+	}
+}
+.mutable-dates {
+	// .mutable-dates__menu
+	&__menu {
+	}
+}
+.mutabled-dates {
+	// .mutabled-dates__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+	}
+	// .mutabled-dates__item
+	&__item {
+	}
+	// .mutabled-dates__link
+	&__link {
+		border: 1px solid #fff;
+		border-radius: 20px;
+		padding: 8px;
+		cursor: pointer;
+		&:hover {
+			background-color: #fff;
+			color: #000;
+			font-weight: bold;
+		}
+	}
+}
+// ZODIAC ABOUT
+.zodiac-about {
+	// .zodiac-about__container
+	&__container {
+	}
+	// .zodiac-about__body
+	&__body {
+		display: flex;
+	}
+	// .zodiac-about__column-photo
+	&__column-photo {
+		flex: 1;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		font-weight: bold;
+	}
+	// .zodiac-about__column-description
+	&__column-description {
+		flex: 1;
+		width: 50%;
+	}
+	// .zodiac-about__photo
+	&__photo {
+		display: flex;
+		justify-content: center;
+		width: 250px;
+		height: 350px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	// .zodiac-about__name
+	&__name {
+		font-size: 24px;
+	}
+	// .zodiac-about__date
+	&__date {
+		font-size: 18px;
+	}
+	// .zodiac-about__general-description
+	&__general-description {
+		line-height: 1.5;
+	}
+}
+.general-description {
+	// .general-description__title
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+		margin: 30px 0px 30px 0px;
+	}
+	// .general-description__text
+	&__text {
+		@extend %popupFont;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 0px 0px 0px 0px;
+	}
+}
+// ZODIAC DAYLE
+.zodiac-dayle {
+	// .zodiac-dayle__container
+	&__container {
+	}
+	// .zodiac-dayle__body
+	&__body {
+		background: rgb(13 21 38 / 48%);
+		border-radius: 24px;
+		padding: 40px 40px;
+		box-shadow: 0px 12px 20px 5px #060c1f;
+		border: 3px solid #eee3;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	// .zodiac-dayle__title
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	// .zodiac-dayle__prediction
+	&__prediction {
+		@extend %popupFont;
+		line-height: 1.5;
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
+// ZODIAC FACTS
+.zodiac-facts {
+	// .zodiac-facts__container
+	&__container {
+	}
+	// .zodiac-facts__body
+	&__body {
+		display: flex;
+		gap: 10%;
+	}
+	// .zodiac-facts__content
+	&__content {
+		flex: 1;
+		width: 50%;
+	}
+	// .zodiac-facts__column
+	&__column {
+	}
+	// .zodiac-facts__best-match
+	&__best-match {
+		flex: 1;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	// .zodiac-facts__match-title
+	&__match-title {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	// .zodiac-facts__match-name
+	&__match-name {
+		font-size: 20px;
+	}
+	// .zodiac-facts__match-photo
+	&__match-photo {
+		padding: 25px;
+		width: 130px;
+		height: 173px;
+		img {
+			filter: grayscale(100%) brightness(0) invert(100%) contrast(100%);
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.facts-top {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #001e28;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 14px;
+	// .facts-top__logo
+	&__logo {
+		border-radius: 50px;
+		padding: 15px;
+		width: 30px;
+		height: 30px;
+		background-color: #fff;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	// .facts-top__title
+	&__title {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	// .facts-top__list
+	&__list {
+		@extend %popupFont;
+		font-weight: 300;
+	}
+}
+.facts-bottom {
+	background: #313d4161;
+	display: flex;
+	justify-content: space-around;
+	// .facts-bottom__list-one
+	&__list-one {
+	}
+	// .facts-bottom__list-two
+	&__list-two {
+	}
+	// .facts-bottom__list
+	&__list {
+		padding: 30px 0px 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	// .facts-bottom__item
+	&__item {
+		
+	}
+}
+// ZODIAC MOTTO
+.zodiac-motto {
+	// .zodiac-motto__container
+	&__container {
+	}
+	// .zodiac-motto__body
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .zodiac-motto__content
+	&__content {
+		width: fit-content;
+		@extend %specialElite;
+		position: relative;
+		border: 2px solid #c5cbb2;
+		border-radius:20px;
+		padding: 25px;
+		&::after {
+			content:"";
+			position: absolute;
+			border: 2px solid #c5cbb2;
+			border-radius: 0 50px 0 0;
+			width: 60px;
+			height: 60px;
+			bottom: -62px;
+			left: 50px;
+			border-bottom: none;
+			border-left: none;
+			z-index: 3;
+		}
+		&::before {
+			content:"";
+			position: absolute;
+			width: 80px;
+			border: 6px solid #000000;
+			bottom: -3px;
+			left: 50px;
+			z-index: 2;
+		}
+	}
+	// .zodiac-motto__text
+	&__text {
+		text-align: center;
+		font-size: 24px;
+		max-width: 600px;
+		line-height: 1.4;
+		padding: 10px;
+		margin: 0;
+	}
+}
+
