@@ -29,12 +29,9 @@ zodiacShowLink.addEventListener('mouseleave', () => {
 	}, 300);
 });
 // For mobile
-zodiacShowLink.addEventListener('click', () => {
-	if (zodiacHiddenBlock.classList.contains('show')) {
-		hideZodiacHiddenBlock();
-	} else {
-		showZodiacHiddenBlock();
-	}
+zodiacShowLink.addEventListener('click', (event) => {
+	event.preventDefault();
+	showZodiacHiddenBlock();
 });
 zodiacHiddenBlock.addEventListener('mouseleave', hideZodiacHiddenBlock);
 zodiacHiddenBlock.addEventListener('click', hideZodiacHiddenBlock);
