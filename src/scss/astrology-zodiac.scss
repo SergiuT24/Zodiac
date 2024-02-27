@@ -8,6 +8,7 @@
 	z-index: 4;
 	.header {
 		box-shadow: none;
+		opacity: 0.9;
 	}
 }
 .astrology {
@@ -40,6 +41,9 @@
 		}
 		&__dayle-zodiac {
 			margin: 50px 0px 0px 0px;
+		}
+		&__motto-zodiac {
+			margin: 50px 0px 100px 0px;
 		}
 	}
 }
@@ -221,9 +225,6 @@
 		&__title {
 			font-size: 18px;
 		}
-		&__text {
-			font-size: 14px;
-		}
 	}
 }
 // ZODIAC DAYLE
@@ -263,11 +264,11 @@
 		}
 	}
 	@media (max-width: 991.98px) {
+		&__body {
+			gap: 15px;
+		}
 		&__title {
 			font-size: 18px;
-		}
-		&__prediction {
-			font-size: 14px;
 		}
 	}
 	@media (max-width: 479.98px) {
@@ -323,6 +324,24 @@
 			height: 100%;
 		}
 	}
+	@media (max-width: 767.98px) {
+		&__body {
+			flex-direction: column;
+			gap: 50px;
+		}
+		&__content {
+			width: auto;
+		}
+		&__best-match {
+			width: auto;
+		}
+		&__match-title {
+			font-size: 20px;
+		}
+		&__match-name {
+			font-size: 18px;
+		}
+	}
 }
 .facts-top {
 	display: flex;
@@ -332,6 +351,7 @@
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	font-size: 14px;
+	padding: 0px 15px 0px;
 	// .facts-top__logo
 	&__logo {
 		border-radius: 50px;
@@ -354,11 +374,23 @@
 		@extend %popupFont;
 		font-weight: 300;
 	}
+	@media (max-width: 767.98px) {
+		&__logo {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	@media (max-width: 479.98px) {
+		&__title {
+			max-width: 60px;
+		}
+	}
 }
 .facts-bottom {
 	background: #313d4161;
 	display: flex;
 	justify-content: space-around;
+	padding: 0px 15px 0px;
 	// .facts-bottom__list-one
 	&__list-one {
 	}
@@ -374,7 +406,11 @@
 	}
 	// .facts-bottom__item
 	&__item {
-		
+	}
+	@media (max-width: 767.98px) {
+		&__item {
+			font-size: 14px;
+		}
 	}
 }
 // ZODIAC MOTTO
@@ -427,6 +463,16 @@
 		line-height: 1.4;
 		padding: 10px;
 		margin: 0;
+	}
+	@media (max-width: 1087px) {
+		&__text {
+			font-size: 20px;
+		}
+	}
+	@media (max-width: 991.98px) {
+		&__text {
+			font-size: 18px;
+		}
 	}
 }
 
