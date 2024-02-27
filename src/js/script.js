@@ -93,7 +93,7 @@ zodiacSigns.forEach(signName => {
 		id: "my-popup",
 		title: `
 		<div class="pupup-imb-box">
-		<img class="pupup-img-sign" src="/img/${signName}.png" alt="${signName}">
+		<img class="pupup-img-sign" src="/img/zodiac-main-signs/${signName}.png" alt="${signName}">
 		</div>
 		`,
 		content: `
