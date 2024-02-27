@@ -141,7 +141,7 @@
 				left: 0;
 				width: 100%;
 				background-color: $mainBg;
-				padding: 70px 0px 70px;
+				padding: 70px 0px 0px;
 				transition: top .4s;
 			}
 		}
@@ -238,22 +238,25 @@
 			&__list {
 				flex-direction: column;
 				justify-content: center;
-				align-items: center;
-				gap: 40px;
+				align-items: left;
+				gap: 0px;
+				border-bottom: 1px solid;
+			}
+			&__item {
+				padding: 20px 20px 20px;
+				border-top: 1px solid;
 			}
 			&__link {
-				font-size: 12px;
+				font-size: 16px;
+				display: flex;
+				justify-content: space-between;
 			}
-			&__subnav {
-				font-size: 12px;
-				top: 40%;
-				left: 36%;
+			&__subnav-signs {
+				justify-content: space-around;
+				font-size: 16px;
 			}
-		}
-		@media (max-width: 479.98px) {
-			&__subnav {
-				top: 40%;
-				left: 18%;
+			&__subnav-signs-column {
+				gap: 20px;
 			}
 		}
 		&__show {

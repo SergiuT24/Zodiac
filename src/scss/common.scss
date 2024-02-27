@@ -1,8 +1,10 @@
 // MENU LINK HOVER
-.effect-child {
-	display: block;
-	transition: 0.5s;
-	&:hover {
-		transform: scale(1.1);
+@media (min-width: 767.98px) {
+	.effect-child {
+		display: block;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
