@@ -21,7 +21,7 @@
 		margin: 80px 0px 0px 0px;
 	}
 	// .astrology__dayle-zodiac
-	&__dayle-zodiac {
+	&__daily-zodiac {
 		margin: 100px 0px 0px 0px;
 	}
 	// .astrology__facts-zodiac
@@ -43,7 +43,7 @@
 		&__about-zodiac {
 			margin: 40px 0px 0px 0px;
 		}
-		&__dayle-zodiac {
+		&__daily-zodiac {
 			margin: 50px 0px 0px 0px;
 		}
 		&__motto-zodiac {
@@ -231,12 +231,12 @@
 		}
 	}
 }
-// ZODIAC DAYLE
-.zodiac-dayle {
-	// .zodiac-dayle__container
+// ZODIAC DAILY
+.zodiac-daily {
+	// .zodiac-daily__container
 	&__container {
 	}
-	// .zodiac-dayle__body
+	// .zodiac-daily__body
 	&__body {
 		background: rgb(13 21 38 / 48%);
 		border-radius: 24px;
@@ -247,12 +247,12 @@
 		flex-direction: column;
 		gap: 30px;
 	}
-	// .zodiac-dayle__title
+	// .zodiac-daily__title
 	&__title {
 		font-size: 24px;
 		font-weight: bold;
 	}
-	// .zodiac-dayle__prediction
+	// .zodiac-daily__prediction
 	&__prediction {
 		@extend %popupFont;
 		line-height: 1.5;
@@ -488,6 +488,7 @@
 	&__body {
 		display: flex;
 		flex-direction: column;
+		gap: 60px;
 		align-items: center;
 		line-height: 1.5;
 	}
@@ -500,6 +501,18 @@
 	}
 	// .zodiac-blog__strengths-weaknesses
 	&__strengths-weaknesses {
+	}
+	// .zodiac-blog__energy
+	&__energy {
+	}
+	// .zodiac-blog__love-relationships
+	&__love-relationships {
+	}
+	// .zodiac-blog__man
+	&__man {
+	}
+	// .zodiac-blog__women
+	&__women {
 	}
 	// .zodiac-blog__title
 	&__title {
