@@ -60,6 +60,12 @@
 		color: $mainWhite;
 		font-size: 17px;
 	}
+	&_link {
+		color: $mainWhite !important;
+		&:hover {
+			color: #aaffe3 !important;
+		}
+	}
 	@media (max-width: 479.98px) {
 		&_sign {
 			font-size: 22px;

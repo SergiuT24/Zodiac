@@ -173,10 +173,10 @@
 			display: none;
 			position: absolute;
 			border: 1px solid #fff;
-			padding: 20px;
+			padding: 30px 40px 30px;
 			background-color: #001e28;
 			top: 90%;
-			left: 34%;
+			left: 32%;
 			&.show {
 				display: block;
 			}
@@ -184,7 +184,7 @@
 		// .menu__subnav-signs
 		&__subnav-signs {
 			display: flex;
-			gap: 40px;
+			gap: 60px;
 		}
 		// .menu__subnav-signs-column
 		&__subnav-signs-column {
@@ -196,7 +196,7 @@
 		&__subnav-signs-link {
 			border-bottom: 0.5px #d4d4d4 dotted;
 			&:hover {
-				color:#05fdaa;
+				color:#aaffe3;
 			}
 		}
 		//========================================================================================================================================================
