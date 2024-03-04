@@ -21,6 +21,7 @@
 		&__column {
 			// .header__column_logo
 			&_logo {
+				z-index: 1;
 				display: flex;
 				gap: 5px;
 				align-items: center;
@@ -261,6 +262,5 @@
 		}
 		&__show {
 			top: 0;
-			border-radius: 10px;
 		}
 }

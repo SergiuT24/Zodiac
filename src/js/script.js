@@ -10,6 +10,21 @@ navOpen.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
 	navBody.classList.remove('menu__show');
 });
+// SCROLL BUTTON
+window.addEventListener('scroll', function () {
+	var scrollButton = document.querySelector('.scroll-top');
+	if (window.scrollY > 100) {
+		scrollButton.style.display = 'flex';
+	} else {
+		scrollButton.style.display = 'none';
+	}
+});
+document.querySelector('.scroll-top').addEventListener('click', function () {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+});
 //========================================================================================================================================================
 // SHOW SUBMENU-ZODIAC
 const zodiacShowLink = document.getElementById('zodiac-subnav');

@@ -11,6 +11,38 @@
 		opacity: 0.9;
 	}
 }
+// SCROLL BLOCK
+.scroll-top {
+	width: 84px;
+	height: 84px;
+	position: fixed;
+	bottom: 110px;
+	right: 110px;
+	z-index: 10;
+	border: 2px solid #0074A0;
+	box-sizing: border-box;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.scroll-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 17px;
+	text-align: center;
+}
+@media (max-width: 991.98px) {
+	.scroll-top {
+		right: 10px;
+		bottom: 95px;
+	}
+}
+// ASTROLOGY
 .astrology {
 	// .astrology__zodiac-dates
 	&__zodiac-dates {
@@ -376,7 +408,7 @@
 	// .facts-top__list
 	&__list {
 		@extend %popupFont;
-		font-weight: 300;
+		font-weight: bold;
 	}
 	@media (max-width: 767.98px) {
 		&__logo {
