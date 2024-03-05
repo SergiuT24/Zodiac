@@ -13,6 +13,62 @@ navClose.addEventListener('click', () => {
 	navBody.classList.remove('menu__show');
 });
 //========================================================================================================================================================
+// SHOW SUBMENU HOROSCOPE
+const horoscopeShowLink = document.getElementById('horoscope-subnav');
+const horoscopeHiddenBlock = document.getElementById('hidden-subhoroscope');
+function showHoroscopeHiddenBlock() {
+	horoscopeHiddenBlock.classList.add('show-horoscope');
+}
+function hideHoroscopeHiddenBlock() {
+	horoscopeHiddenBlock.classList.remove('show-horoscope');
+}
+// FOR PC
+if (window.innerWidth > 767.98) {
+	horoscopeShowLink.addEventListener('mouseenter', showHoroscopeHiddenBlock);
+	horoscopeShowLink.addEventListener('mouseleave', () => {
+		setTimeout(() => {
+			if (!horoscopeHiddenBlock.matches(':hover')) {
+				hideHoroscopeHiddenBlock();
+			}
+		}, 300);
+	});
+	horoscopeHiddenBlock.addEventListener('mouseleave', hideHoroscopeHiddenBlock);
+}
+// FOR MOBILE
+window.addEventListener('load', function () {
+	const mobileHoroscopeNav = document.getElementById('mobile-horoscope-nav');
+	let mobileSubHoroscope = null;
+	horoscopeShowLink.addEventListener('click', function (e) {
+		if (window.innerWidth <= 767.98) {
+			if (!mobileSubHoroscope) {
+				e.preventDefault();
+				mobileSubHoroscope = document.createElement('ul');
+				mobileSubHoroscope.classList.add('menu__list');
+				mobileSubHoroscope.innerHTML = `
+							<div class="menu__item for-remove">
+								<div class="menu__subhoroscope-list">
+									<div class="menu__subhoroscope-column">
+										<a class="menu__subhoroscope-link" href="/signs-html/Berbec.html">Zilnic</a>
+										<a class="menu__subhoroscope-link" href="/signs-html/Taur.html">Saptaminal</a>
+										<a class="menu__subhoroscope-link" href="/signs-html/Gemeni.html">Lunar</a>
+									</div>
+									<div class="menu__subhoroscope-column">
+										<a class="menu__subhoroscope-link" href="/signs-html/Balanță.html">Anual</a>
+										<a class="menu__subhoroscope-link" href="/signs-html/Scorpion.html">Dragoste</a>
+										<a class="menu__subhoroscope-link" href="/signs-html/Săgetător.html">Cariera</a>
+									</div>
+								</div>
+							</div>
+				`
+				mobileHoroscopeNav.insertAdjacentElement('afterend', mobileSubHoroscope);
+			} else {
+				mobileSubHoroscope.remove();
+				mobileSubHoroscope = null;
+			}
+		}
+	});
+});
+//========================================================================================================================================================
 // SHOW SUBMENU-ZODIAC
 const zodiacShowLink = document.getElementById('zodiac-subnav');
 const zodiacHiddenBlock = document.getElementById('hidden-subnav');

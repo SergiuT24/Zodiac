@@ -8,6 +8,9 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
+				// HOROSCOPE PAGES
+				day: resolve(__dirname, 'horoscope-html/Zilnic.html'),
+				// SIGNS PAGES
 				berbec: resolve(__dirname, 'signs-html/Berbec.html'),
 				taur: resolve(__dirname, 'signs-html/Taur.html'),
 				gemeni: resolve(__dirname, 'signs-html/Gemeni.html'),

@@ -162,12 +162,46 @@
 		&__item {
 		}
 		//========================================================================================================================================================
+		.menu {
+			// .menu__dropdown
+			&__dropdown {
+			}
+			// .menu__subhoroscope
+			&__subhoroscope {
+				display: none;
+				position: absolute;
+				border: 1px solid #fff;
+				padding: 30px 40px 30px;
+				background-color: #001e28;
+				top: 90%;
+				left: 25%;
+				&.show-horoscope {
+					display: block;
+				}
+			}
+			// .menu__subhoroscope-list
+			&__subhoroscope-list {
+				display: flex;
+				gap: 60px;
+			}
+			// .menu__subhoroscope-column
+			&__subhoroscope-column {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+			}
+			// .menu__subhoroscope-link
+			&__subhoroscope-link {
+				border-bottom: 0.5px #d4d4d4 dotted;
+				&:hover {
+					color:#aaffe3;
+				}
+			}
+		}
+		//========================================================================================================================================================
 		// .menu__dropdown
 		&__dropdown {
 			cursor: pointer;
-		}
-		// .menu__link
-		&__link {
 		}
 		// .menu__subnav
 		&__subnav {
@@ -177,7 +211,7 @@
 			padding: 30px 40px 30px;
 			background-color: #001e28;
 			top: 90%;
-			left: 32%;
+			left: 50%;
 			&.show {
 				display: block;
 			}
@@ -191,7 +225,7 @@
 		&__subnav-signs-column {
 			display: flex;
 			flex-direction: column;
-			gap: 10px;
+			gap: 15px;
 		}
 		// .menu__subnav-signs-link
 		&__subnav-signs-link {
@@ -251,6 +285,10 @@
 				font-size: 16px;
 				display: flex;
 				justify-content: space-between;
+			}
+			&__subhoroscope-list {
+				justify-content: space-around;
+				font-size: 16px;
 			}
 			&__subnav-signs {
 				justify-content: space-around;
