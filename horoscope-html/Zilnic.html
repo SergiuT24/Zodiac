@@ -19,58 +19,145 @@
 		<!-- HEADER HTML -->
 		<load src="src/html/header.html" />
 		<main class="forecast">
-			<section class="forecast__navigation">
+			<!-- FORECAST-SECTION -->
+			<section class="forecast__traits forecast">
 				<div class="forecast__container">
-					<menu class="forecast__menu">
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/berbec.svg" alt="berbec">
-							<span class="forecast__item-text">Berbec</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/taur.svg" alt="taur">
-							<span class="forecast__item-text">Taur</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/gemeni.svg" alt="gemeni">
-							<span class="forecast__item-text">Gemeni</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/rac.svg" alt="rac">
-							<span class="forecast__item-text">Rac</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/leu.svg" alt="leu">
-							<span class="forecast__item-text">Leu</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/fecioara.svg" alt="fecioara">
-							<span class="forecast__item-text">Fecioară</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/balanta.svg" alt="balanta">
-							<span class="forecast__item-text">Balanță</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/scorpion.svg" alt="scorpion">
-							<span class="forecast__item-text">Scorpion</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/sagetator.svg" alt="sagetator">
-							<span class="forecast__item-text">Săgetător</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/capricorn.svg" alt="capricorn">
-							<span class="forecast__item-text">Capricorn</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/varsator.svg" alt="varsator">
-							<span class="forecast__item-text">Vărsător</span>
-						</a>
-						<a href="#" class="forecast__item">
-							<img src="/public/img/horoscope/peste.svg" alt="peste">
-							<span class="forecast__item-text">Pește</span>
-						</a>
-					</menu>
+					<div class="forecast__body">
+						<div class="forecast__select">
+							<div class="forecast__horoscope-select horoscope-select">
+								<div class="horoscope-select__title">Horoscopul zilnic</div>
+								<div class="horoscope-select__choose-sign choose-sign">
+									<label class="choose-sign__title" for="select-sign">Alege-ți zodia:</label>
+									<select class="choose-sign__select" id="select-sign" name="select-sign">
+										<option value="Berbec" selected>Berbec</option>
+										<option value="Taur">Taur</option>
+										<option value="Gemeni">Gemeni</option>
+										<option value="Rac">Rac</option>
+										<option value="Leu">Leu</option>
+										<option value="Fecioară">Fecioară</option>
+										<option value="Balanță">Balanță</option>
+										<option value="Scorpion">Scorpion</option>
+										<option value="Săgetător">Săgetător</option>
+										<option value="Capricorn">Capricorn</option>
+										<option value="Vărsător">Vărsător</option>
+										<option value="Pește">Pește</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="forecast-daily__body">
+							<div class="forecast-daily__column-prediction">
+								<div class="forecast-daily__title">Horoscopul zilei de 25 februarie 2024 pentru Berbec:</div>
+								<div class="forecast-daily__prediction">Este posibil sa te necăjească afecțiunile vechi legate
+									de
+									sistemul digestiv, stomac sau sistem osos si articular. Tentatita de a te implica in mai
+									multe
+									treburi cotidiene este mare si paguboasa la acest final de saptamana. Fii prudent si
+									ingrijeste-te
+									corespunzator! Cei dragi sau colegii de munca, daca lucrezi in aceste zile te pot ajuta cu
+									plăcere.
+									Acceptă-le sprijinul!
+								</div>
+							</div>
+							<div class="forecast-daily__column-photo">
+								<div class="forecast-daily__photo">
+									<img src="/public/img/signs-big-item/Berbec.svg" alt="Berbec">
+								</div>
+							</div>
+						</div>
+						<div class="selected__forecast">
+							<div class="column__forecast match">
+								<div class="match__title">Potrivirile de astazi:</div>
+								<div class="match__box-content">
+									<div class="box-content__column">
+										<div class="box-content__title">Dragoste</div>
+										<div class="box-content__photo"><img src="/public/img/signs-big-item/Capricorn.svg"
+												alt="Capricorn">
+										</div>
+										<div class="box-content__name">Capricorn</div>
+									</div>
+									<div class="box-content__column">
+										<div class="box-content__title">Carieră</div>
+										<div class="box-content__photo"><img src="/public/img/signs-big-item/Gemeni.svg"
+												alt="Gemeni">
+										</div>
+										<div class="box-content__name">Gemeni</div>
+									</div>
+									<div class="box-content__column">
+										<div class="box-content__title">Prietenie</div>
+										<div class="box-content__photo"><img src="/public/img/signs-big-item/Leu.svg" alt="Leu">
+										</div>
+										<div class="box-content__name">Leu</div>
+									</div>
+								</div>
+							</div>
+							<div class="column__forecast mood">
+								<div class="mood__title">Ratingul zilei de astazi<br>pentru spiritul tau:</div>
+								<div class="mood__content">
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Succes</div>
+										<div class="column-mood__stars">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Fericire</div>
+										<div class="column-mood__stars">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Sex</div>
+										<div class="column-mood__stars">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Dispoziție</div>
+										<div class="column-mood__stars">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Agitație</div>
+										<div class="column-mood__stars">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Erudiție</div>
+										<div class="column-mood__stars">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

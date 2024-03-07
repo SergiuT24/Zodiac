@@ -1,6 +1,7 @@
 // BASE STYLE
 body {
 	color: #fff;
+	overflow-x: hidden;
 	width: 100vw;
 	background: linear-gradient(to bottom, #001e28, #1f4037);
 	@extend %baseFont;
