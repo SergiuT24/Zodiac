@@ -10,6 +10,8 @@ export default defineConfig({
 				main: resolve(__dirname, 'index.html'),
 				// HOROSCOPE PAGES
 				day: resolve(__dirname, 'horoscope-html/Zilnic.html'),
+				// HOROSCOPE DAILY
+				berbecZilnic: resolve(__dirname, 'horoscop-zilnic/Berbec-zilnic.html'),
 				// SIGNS PAGES
 				berbec: resolve(__dirname, 'signs-html/Berbec.html'),
 				taur: resolve(__dirname, 'signs-html/Taur.html'),
