@@ -40,7 +40,7 @@
 .horoscope-select {
 	// .horoscope-select__title
 	&__title {
-		font-size: 40px;
+		font-size: 35px;
 		padding: 40px 0px 40px 40px;
 	}
 	// .horoscope-select__choose-sign
@@ -378,13 +378,13 @@
 .column-mood {
 	// .column-mood__name
 	&__name {
-		font-size: 16px;
+		font-size: 20px;
 		font-weight: bold;
 		text-align: center;
 	}
 	// .column-mood__stars
 	&__stars {
-		font-size: 16px;
+		font-size: 20px;
 		display: flex;
 		justify-content: center;
 	}
@@ -398,6 +398,9 @@
 	}
 }
 .ri-star-fill {
+	// color: #f39c12;
+}
+.yellow-for-stars {
 	color: #f39c12;
 }
 @media (max-width: 1087px) {

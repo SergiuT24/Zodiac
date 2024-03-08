@@ -27,7 +27,7 @@
 							<div class="forecast__horoscope-select horoscope-select">
 								<div class="horoscope-select__title">Horoscopul zilnic</div>
 								<div class="horoscope-select__choose-sign choose-sign">
-									<label class="choose-sign__title" for="select-sign">Alege-ți zodia:</label>
+									<label class="choose-sign__title" for="select-sign">Horscopul Berbec</label>
 									<select onchange="window.location.href=this.value;" class="choose-sign__select"
 										id="select-sign" name="select-sign">
 										<option value="Alege Zodia" selected>Schimbă Zodia</option>
@@ -49,7 +49,7 @@
 						</div>
 						<div class="forecast-daily__body">
 							<div class="forecast-daily__column-prediction">
-								<div class="forecast-daily__title">Horoscopul zilei de 25 februarie 2024 pentru Berbec:</div>
+								<div class="forecast-daily__title">Horoscopul zilei de 8 Martie 2024 pentru Berbec:</div>
 								<div class="forecast-daily__prediction">Este posibil sa te necăjească afecțiunile vechi legate
 									de
 									sistemul digestiv, stomac sau sistem osos si articular. Tentatita de a te implica in mai
@@ -98,7 +98,7 @@
 								<div class="mood__content">
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Succes</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="succes">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -108,7 +108,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Fericire</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="happiness">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -118,7 +118,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Sex</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="sex">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -128,7 +128,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Dispoziție</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="provision">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -137,8 +137,8 @@
 										</div>
 									</div>
 									<div class="mood__column-mood">
-										<div class="column-mood__name">Agitație</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__name">Stres</div>
+										<div class="column-mood__stars" id="stres">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -148,7 +148,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Erudiție</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="erudition">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -167,6 +167,7 @@
 		<load src="src/html/footer.html" />
 	</div>
 	<script type="module" src="../src/js/main.js"></script>
+	<script type="module" src="../src/js/daily.js"></script>
 </body>
 
 </html>
