@@ -1,0 +1,498 @@
+{
+	"2024-03-09": {
+		"succes": 5,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 4,
+		"stres": 2,
+		"erudition": 3
+	},
+	"2024-03-10": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 2,
+		"provision": 5,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-03-11": {
+		"succes": 2,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 3,
+		"stres": 2,
+		"erudition": 5
+	},
+	"2024-03-12": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 5,
+		"provision": 2,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-03-13": {
+		"succes": 5,
+		"happiness": 2,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 2
+	},
+	"2024-03-14": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 2,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-03-15": {
+		"succes": 2,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-03-16": {
+		"succes": 4,
+		"happiness": 2,
+		"sex": 5,
+		"provision": 3,
+		"stres": 5,
+		"erudition": 2
+	},
+	"2024-03-17": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 2,
+		"provision": 4,
+		"stres": 2,
+		"erudition": 5
+	},
+	"2024-03-18": {
+		"succes": 5,
+		"happiness": 3,
+		"sex": 4,
+		"provision": 2,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-03-19": {
+		"succes": 2,
+		"happiness": 4,
+		"sex": 5,
+		"provision": 3,
+		"stres": 2,
+		"erudition": 5
+	},
+	"2024-03-20": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 5,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-03-21": {
+		"succes": 3,
+		"happiness": 2,
+		"sex": 4,
+		"provision": 3,
+		"stres": 5,
+		"erudition": 4
+	},
+	"2024-03-22": {
+		"succes": 2,
+		"happiness": 5,
+		"sex": 3,
+		"provision": 2,
+		"stres": 4,
+		"erudition": 5
+	},
+	"2024-03-23": {
+		"succes": 5,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 2
+	},
+	"2024-03-24": {
+		"succes": 4,
+		"happiness": 2,
+		"sex": 5,
+		"provision": 3,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-03-25": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 2,
+		"stres": 5,
+		"erudition": 4
+	},
+	"2024-03-26": {
+		"succes": 2,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 3
+	},
+	"2024-03-27": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-03-28": {
+		"succes": 5,
+		"happiness": 2,
+		"sex": 4,
+		"provision": 3,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-03-29": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 2,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 5
+	},
+	"2024-03-30": {
+		"succes": 2,
+		"happiness": 4,
+		"sex": 5,
+		"provision": 3,
+		"stres": 3,
+		"erudition": 2
+	},
+	"2024-03-31": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-04-01": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 5,
+		"provision": 3,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-02": {
+		"succes": 5,
+		"happiness": 2,
+		"sex": 3,
+		"provision": 4,
+		"stres": 5,
+		"erudition": 3
+	},
+	"2024-04-03": {
+		"succes": 4,
+		"happiness": 5,
+		"sex": 3,
+		"provision": 2,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-04-04": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 2,
+		"provision": 5,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-04-05": {
+		"succes": 2,
+		"happiness": 3,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 3
+	},
+	"2024-04-06": {
+		"succes": 4,
+		"happiness": 5,
+		"sex": 3,
+		"provision": 4,
+		"stres": 2,
+		"erudition": 3
+	},
+	"2024-04-07": {
+		"succes": 3,
+		"happiness": 2,
+		"sex": 4,
+		"provision": 3,
+		"stres": 5,
+		"erudition": 2
+	},
+	"2024-04-08": {
+		"succes": 5,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 2,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-04-09": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 5,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-04-10": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 5,
+		"provision": 3,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-11": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-04-12": {
+		"succes": 5,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-13": {
+		"succes": 3,
+		"happiness": 2,
+		"sex": 4,
+		"provision": 3,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-04-14": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 5,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 2
+	},
+	"2024-04-15": {
+		"succes": 5,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-16": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 2,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-04-17": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 5,
+		"provision": 3,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-04-18": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 4,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 2
+	},
+	"2024-04-19": {
+		"succes": 5,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-20": {
+		"succes": 4,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 3,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-21": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-04-22": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 5,
+		"provision": 5,
+		"stres": 4,
+		"erudition": 3
+	},
+	"2024-04-23": {
+		"succes": 5,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-04-24": {
+		"succes": 4,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 3
+	},
+	"2024-04-25": {
+		"succes": 3,
+		"happiness": 4,
+		"sex": 5,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-04-26": {
+		"succes": 4,
+		"happiness": 3,
+		"sex": 4,
+		"provision": 3,
+		"stres": 4,
+		"erudition": 5
+	},
+	"2024-04-27": {
+		"succes": 5,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-28": {
+		"succes": 4,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 3
+	},
+	"2024-04-29": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-04-30": {
+		"succes": 4,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-05-01": {
+		"succes": 5,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-05-02": {
+		"succes": 4,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 4
+	},
+	"2024-05-03": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-05-04": {
+		"succes": 4,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-05-05": {
+		"succes": 5,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-05-06": {
+		"succes": 4,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-05-07": {
+		"succes": 3,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	},
+	"2024-05-08": {
+		"succes": 4,
+		"happiness": 4,
+		"sex": 3,
+		"provision": 4,
+		"stres": 3,
+		"erudition": 5
+	},
+	"2024-05-09": {
+		"succes": 5,
+		"happiness": 5,
+		"sex": 4,
+		"provision": 5,
+		"stres": 2,
+		"erudition": 4
+	}
+}
