@@ -14,8 +14,7 @@ const matchesIds = ["love", "career", "friend"];
 matchesIds.forEach(matchesId => {
 	const imgElement = document.getElementById(matchesId);
 	const randomNumber = Math.floor(Math.random() * 12) + 1;
-	const imgUrl = new URL(`./icons/match/${randomNumber}.svg`, import.meta.url).href;
-	imgElement.src = imgUrl;
+	imgElement.src = `/icons/match/${randomNumber}.svg`
 });
 
 // RANDOM RATING STARS OF MOOD
