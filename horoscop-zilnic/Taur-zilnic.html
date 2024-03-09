@@ -27,22 +27,22 @@
 							<div class="forecast__horoscope-select horoscope-select">
 								<div class="horoscope-select__title">Horoscopul zilnic</div>
 								<div class="horoscope-select__choose-sign choose-sign">
-									<label class="choose-sign__title" for="select-sign">Horoscopul Taur</label>
+									<label class="choose-sign__title" for="select-sign">Horscopul Berbec</label>
 									<select onchange="window.location.href=this.value;" class="choose-sign__select"
 										id="select-sign" name="select-sign">
-										<option value="Alege Zodia" selected>Schimbă Zodia</option>
+										<option value="/horoscope-html/Zilnic.html" selected>Schimbă Zodia</option>
 										<option value="/horoscop-zilnic/Berbec-zilnic.html">Berbec</option>
 										<option value="/horoscop-zilnic/Taur-zilnic.html">Taur</option>
-										<option value="Gemeni">Gemeni</option>
-										<option value="Rac">Rac</option>
-										<option value="Leu">Leu</option>
-										<option value="Fecioară">Fecioară</option>
-										<option value="Balanță">Balanță</option>
-										<option value="Scorpion">Scorpion</option>
-										<option value="Săgetător">Săgetător</option>
-										<option value="Capricorn">Capricorn</option>
-										<option value="Vărsător">Vărsător</option>
-										<option value="Pește">Pește</option>
+										<option value="/horoscop-zilnic/Gemeni-zilnic.html">Gemeni</option>
+										<option value="/horoscop-zilnic/Rac-zilnic.html">Rac</option>
+										<option value="/horoscop-zilnic/Leu-zilnic.html">Leu</option>
+										<option value="/horoscop-zilnic/Fecioara-zilnic.html">Fecioară</option>
+										<option value="/horoscop-zilnic/Balanta-zilnic.html">Balanță</option>
+										<option value="/horoscop-zilnic/Scorpion-zilnic.html">Scorpion</option>
+										<option value="/horoscop-zilnic/Sagetator-zilnic.html">Săgetător</option>
+										<option value="/horoscop-zilnic/Capricon-zilnic.html">Capricorn</option>
+										<option value="/horoscop-zilnic/Varsator-zilnic.html">Vărsător</option>
+										<option value="/horoscop-zilnic/Pesti-zilnic.html">Pește</option>
 									</select>
 								</div>
 							</div>
@@ -73,23 +73,21 @@
 								<div class="match__box-content">
 									<div class="box-content__column">
 										<div class="box-content__title">Dragoste</div>
-										<div class="box-content__photo"><img src="/public/img/signs-big-item/Capricorn.svg"
-												alt="Capricorn">
+										<div class="box-content__photo"><img id="love" src="" alt="">
 										</div>
-										<div class="box-content__name">Capricorn</div>
+										<div class="box-content__name" id="love-name"></div>
 									</div>
 									<div class="box-content__column">
 										<div class="box-content__title">Carieră</div>
-										<div class="box-content__photo"><img src="/public/img/signs-big-item/Gemeni.svg"
-												alt="Gemeni">
+										<div class="box-content__photo"><img id="career" src="" alt="">
 										</div>
-										<div class="box-content__name">Gemeni</div>
+										<div class="box-content__name" id="career-name"></div>
 									</div>
 									<div class="box-content__column">
 										<div class="box-content__title">Prietenie</div>
-										<div class="box-content__photo"><img src="/public/img/signs-big-item/Leu.svg" alt="Leu">
+										<div class="box-content__photo"><img id="friend" src="" alt="">
 										</div>
-										<div class="box-content__name">Leu</div>
+										<div class="box-content__name" id="friend-name"></div>
 									</div>
 								</div>
 							</div>
@@ -98,7 +96,7 @@
 								<div class="mood__content">
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Succes</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="success">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -108,7 +106,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Fericire</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="happiness">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -118,7 +116,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Sex</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="sex">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -128,7 +126,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Dispoziție</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="provision">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -137,8 +135,8 @@
 										</div>
 									</div>
 									<div class="mood__column-mood">
-										<div class="column-mood__name">Agitație</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__name">Stres</div>
+										<div class="column-mood__stars" id="stress">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -148,7 +146,7 @@
 									</div>
 									<div class="mood__column-mood">
 										<div class="column-mood__name">Erudiție</div>
-										<div class="column-mood__stars">
+										<div class="column-mood__stars" id="erudition">
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
 											<div class="ri-star-fill"></div>
@@ -167,6 +165,7 @@
 		<load src="src/html/footer.html" />
 	</div>
 	<script type="module" src="../src/js/main.js"></script>
+	<script type="module" src="../src/js/daily.js"></script>
 </body>
 
 </html>

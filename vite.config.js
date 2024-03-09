@@ -12,6 +12,17 @@ export default defineConfig({
 				day: resolve(__dirname, 'horoscope-html/Zilnic.html'),
 				// HOROSCOPE DAILY
 				berbecZilnic: resolve(__dirname, 'horoscop-zilnic/Berbec-zilnic.html'),
+				taurZilnic: resolve(__dirname, 'horoscop-zilnic/Taur-zilnic.html'),
+				gemeniZilnic: resolve(__dirname, 'horoscop-zilnic/Gemeni-zilnic.html'),
+				racZilnic: resolve(__dirname, 'horoscop-zilnic/Rac-zilnic.html'),
+				leuZilnic: resolve(__dirname, 'horoscop-zilnic/Leu-zilnic.html'),
+				fecioaraZilnic: resolve(__dirname, 'horoscop-zilnic/Fecioara-zilnic.html'),
+				balantaZilnic: resolve(__dirname, 'horoscop-zilnic/Balanta-zilnic.html'),
+				scorpionZilnic: resolve(__dirname, 'horoscop-zilnic/Scorpion-zilnic.html'),
+				sagetatorZilnic: resolve(__dirname, 'horoscop-zilnic/Sagetator-zilnic.html'),
+				capricornZilnic: resolve(__dirname, 'horoscop-zilnic/Capricon-zilnic.html'),
+				varsatorZilnic: resolve(__dirname, 'horoscop-zilnic/Varsator-zilnic.html'),
+				pesteZilnic: resolve(__dirname, 'horoscop-zilnic/Pesti-zilnic.html'),
 				// SIGNS PAGES
 				berbec: resolve(__dirname, 'signs-html/Berbec.html'),
 				taur: resolve(__dirname, 'signs-html/Taur.html'),
