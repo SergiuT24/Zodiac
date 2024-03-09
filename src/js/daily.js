@@ -14,7 +14,8 @@ const matchesIds = ["love", "career", "friend"];
 matchesIds.forEach(matchesId => {
 	const imgElement = document.getElementById(matchesId);
 	const randomNumber = Math.floor(Math.random() * 12) + 1;
-	imgElement.src = 'https://horoscopzilei.netlify.app/public/icons/match/' + randomNumber + '.svg';
+	const imgUrl = new URL(`./icons/match/${randomNumber}.svg`, import.meta.url).href;
+	imgElement.src = imgUrl;
 });
 
 // RANDOM RATING STARS OF MOOD
