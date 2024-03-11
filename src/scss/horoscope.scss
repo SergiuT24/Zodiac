@@ -318,7 +318,6 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
-		border-radius: 20px;
 	}
 	// .box-content__title
 	&__title {
@@ -329,7 +328,7 @@
 	// .box-content__photo
 	&__photo {
 		padding: 5px;
-		border-radius: 10px;
+		border-radius: 30px;
 		width: 135px;
 		height: 173px;
 		img {
