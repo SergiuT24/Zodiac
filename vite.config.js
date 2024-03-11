@@ -20,7 +20,7 @@ export default defineConfig({
 				balantaZilnic: resolve(__dirname, 'horoscop-zilnic/balanta-zilnic.html'),
 				scorpionZilnic: resolve(__dirname, 'horoscop-zilnic/scorpion-zilnic.html'),
 				sagetatorZilnic: resolve(__dirname, 'horoscop-zilnic/sagetator-zilnic.html'),
-				capricornZilnic: resolve(__dirname, 'horoscop-zilnic/capricon-zilnic.html'),
+				capricornZilnic: resolve(__dirname, 'horoscop-zilnic/capricorn-zilnic.html'),
 				varsatorZilnic: resolve(__dirname, 'horoscop-zilnic/varsator-zilnic.html'),
 				pesteZilnic: resolve(__dirname, 'horoscop-zilnic/pesti-zilnic.html'),
 				// SIGNS PAGES
