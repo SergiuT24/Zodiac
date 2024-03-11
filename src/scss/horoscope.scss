@@ -156,6 +156,13 @@
 	}
 	// .forecast-daily__photo
 	&__photo {
+		p {
+			margin-top: 0px;
+			text-align: center;
+			letter-spacing: 4px;
+			font-size: 24px;
+			font-weight: bold;	
+		}
 		img {
 			max-width: 250px;
 		}
@@ -184,6 +191,7 @@
 		line-height: 1.5;
 		font-size: 18px;
 		font-weight: 300;
+		padding-top: 30px;
 	}
 	@media (max-width: 1087px) {
 		&__title {
@@ -204,6 +212,9 @@
 	@media (max-width: 479.98px) {
 		&__body {
 			padding: 20px 20px;
+		}
+		&__prediction {
+			padding-top: 0px;
 		}
 	}
 }
