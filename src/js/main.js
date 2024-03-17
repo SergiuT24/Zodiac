@@ -48,7 +48,7 @@ window.addEventListener('load', function () {
 							<div class="menu__item for-remove">
 								<div class="menu__subhoroscope-list">
 									<div class="menu__subhoroscope-column">
-										<a class="menu__subhoroscope-link" href="/horoscope-html/zilnic.html">Zilnic</a>
+										<a class="menu__subhoroscope-link" href="/horoscope-html/zilnic">Zilnic</a>
 										<a class="menu__subhoroscope-link" href="/signs-html/Taur.html">Saptaminal</a>
 										<a class="menu__subhoroscope-link" href="/signs-html/Gemeni.html">Lunar</a>
 									</div>

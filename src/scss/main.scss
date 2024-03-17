@@ -102,12 +102,9 @@
 			grid-template-columns: repeat(auto-fit,minmax(170px, 1fr));
 		}
 	}
-	// .horoscope__column
-	&__column {
-		cursor: pointer;
-	}
 	// .horoscope__sign
 	&__sign {
+		cursor: pointer;
 	}
 }
 .sign-zodiac {
