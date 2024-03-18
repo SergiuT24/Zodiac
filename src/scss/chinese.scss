@@ -1,0 +1,79 @@
+.page {
+	// .page__main-chinese-title
+	&__main-chinese-title {
+		margin: 150px 0px 20px 0px
+	}
+	// .page__main-chinese-zodiac
+	&__main-chinese-zodiac {
+		margin-bottom: 100px;
+	}
+	// .page__chinese-select
+	&__chinese-select {
+		margin-bottom: 160px;
+	}
+}
+// .chinese__body
+.chinese__body {
+	gap: 20px;
+	justify-content: center;
+}
+// .main-chinese
+.main-chinese {
+	img,h3 {
+		&:hover {
+			transform: scale(1.1);
+			transition: transform 0.3s ease;
+		}
+	}
+}
+// .sign-icon-chinese
+.sign-icon-chinese {
+	width: 95px;
+	height: 95px;
+}
+// CHINESE SELECT
+.chinese-select {
+	// .chinese-select__container
+	&__container {
+	}
+	@media (min-width: 767.98px) {
+		&__container {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+.chinese-form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	// .chinese-form__find
+	&__find {
+		font-size: 22px;
+	}
+	select {
+		width: 100%;
+		border-radius: 4px;
+		border: 1px #ddd solid;
+		padding: 10px 20px;
+	}
+	// .chinese-form__button
+	&__button {
+		border: 1px #ddd solid;
+		border-radius: 4px;
+		cursor: pointer;
+		padding: 15px 30px;
+		background: #c5cbb2;
+		&:hover {
+			background: #868a7b;
+		}
+	}
+}
+@media (min-width: 767.98px) {
+	.chinese-form {
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+	}
+}
+

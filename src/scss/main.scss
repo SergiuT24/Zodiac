@@ -96,7 +96,6 @@
 	// .horoscope__body
 	&__body {
 		display: grid;
-		grid-template-columns: repeat((auto-fit),minmax(130px, 1fr));
 		gap: 40px;
 	}
 	@media (min-width: 479.98px) {

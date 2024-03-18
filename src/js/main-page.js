@@ -39,16 +39,3 @@ const quote = document.getElementById('block-quote');
 quote.innerHTML = `Citatul zilei: ${dayQuotes[formattedDate]["quote"]}`;
 const author = document.getElementById('block-author');
 author.innerHTML = `${dayQuotes[formattedDate]["author"]}`;
-// SELECT SIGN TAIRS
-// document.getElementById("select-sign").addEventListener("change", function () {
-// 	const selectedOption = this.value;
-// 	createBlock(selectedOption);
-// });
-
-// function createBlock(option) {
-// 	const someBlock = document.getElementById("some-block");
-// 	someBlock.innerHTML = "";
-
-// 	const block = document.createElement("div");
-// 	block.textContent
-// }
