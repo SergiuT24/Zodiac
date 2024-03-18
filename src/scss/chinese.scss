@@ -31,6 +31,15 @@
 	width: 95px;
 	height: 95px;
 }
+@media (max-width: 479.98px) {
+	.sign-icon-chinese {
+		width: 60px;
+		height: 60px;
+	}
+	.chinese__body {
+		grid-template-columns: repeat(2, minmax(60px, 1fr));
+	}
+}
 // CHINESE SELECT
 .chinese-select {
 	// .chinese-select__container
