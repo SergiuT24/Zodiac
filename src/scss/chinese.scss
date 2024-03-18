@@ -1,7 +1,7 @@
 .page {
 	// .page__main-chinese-title
 	&__main-chinese-title {
-		margin: 150px 0px 20px 0px
+		margin: 150px 0px 20px 0px;
 	}
 	// .page__main-chinese-zodiac
 	&__main-chinese-zodiac {
@@ -10,6 +10,17 @@
 	// .page__chinese-select
 	&__chinese-select {
 		margin-bottom: 160px;
+	}
+	@media (max-width: 479.98px) {
+		&__main-chinese-title {
+			margin: 100px 0px 0px 0px;
+		}
+		&__main-chinese-zodiac {
+			margin-bottom: 40px;
+		}
+		&__chinese-select {
+			margin-bottom: 100px;
+		}
 	}
 }
 // .chinese__body
@@ -59,6 +70,7 @@
 	// .chinese-form__find
 	&__find {
 		font-size: 22px;
+		text-align: center;
 	}
 	select {
 		width: 100%;
