@@ -9,48 +9,60 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
 	<!--=============== REMIXICONS ===============-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-	<title>Zodiac Chinezesc</title>
+	<title>Horoscop chinezesc pentru 2024 - Anul Iepurelui</title>
 	<!--=============== POPUP-JS ===============-->
 	<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
 </head>
 
 <body>
-	<div class="wrapper">
+	<!-- wrapper-forecast -->
+	<div class="wrapper-chinese">
 		<!-- HEADER HTML -->
 		<load src="src/html/header.html" />
-		<div class="chinese-sign__container" style="margin-top: 100px;">
-			<div class="chinese-img">
-				<img src="/public/img/chinese-zodiac/iepure.svg" alt="Iepure" style="width: 200px; height: 200px;">
+		<main class="page-chinese">
+			<!-- TITLEBLOCK -->
+			<div class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<h1 class="main-block__title">Horoscop chinezesc pentru 2024 - Anul Iepurelui</h1>
+					</div>
+				</div>
 			</div>
-			<div class="chinese-sign__text">
-				Zodia Iepure din zodiacul chinezesc
-				Numele chinezesc: Tu
-				Anotimpul: primavara
-				Luna: martie
-
-				Cei din zodia Iepure sunt de obicei oamenii care urăsc cearta şi zgomotul inutil. Nu îţi va fi deloc uşor să
-				provoci un nativ, pentru că dă dovadă de un calm ieşit din comun. Dacă se găseşte într-un loc prea puţin
-				favorabil, atunci preferă să stea retras. Unii îi pot considera timizi pe cei născuţi sub acest semn, însă
-				ei cred cu tărie că este vorba despre precauţie. Nu îi place să îţi asume riscuri, de aceea preferă să
-				analizeze cu atenţie toate aspectele unei probleme înainte de a găsi soluţii. Afişează adesea o lipsă de
-				încredere în sine şi ratează multe oportunităţi din cauza precauţiei exagerate.
-				Acesta este unul dintre semnele zodiacului chinezesc înzestrat cu muştă creativitate şi eleganţă. Nu este de
-				mirare că are o casă decorată cu mult bun gust şi o garderobă plină de stil. De obicei se face uşor plăcut,
-				aşa că devine o companie plăcută pentru ceilalţi.
-				În dragoste, Iepurele este un partener romantic şi grijuliu. Datorită firii lor plăcute şi deloc agresive,
-				cei din această zodie au foarte mulţi pretendenţi. Totuşi se simte atras de persoanele manierate şi blânde,
-				dar mai ales de încredere.
-
-				Horoscopul chinezesc spune că Iepurele este compatibil în general cu cei din zodia Mistreţ (Porc), Dragon şi
-				Capra.
-			</div>
-		</div>
+			<!-- ABOUT CHINESE SIGN -->
+			<section class="page-chinese__about-chinese-sgn chinese-sgn-about">
+				<div class="chinese-sgn-about__container">
+					<div class="chinese-sgn-about__body">
+						<div class="chinese-sgn-about__column chinese-sgn-about__column-image">
+							<div class="chinese-sgn-about__image">
+								<img src="/public/img/chinese-zodiac/iepure.svg" alt="Iepure">
+							</div>
+						</div>
+						<div class="chinese-sgn-about__column">
+							<p class="chinese-sgn-about__years">
+								Dacă v-ați născut în anii 1951, 1963, 1975, 1987, 1999, 2011, 2023 atunci sunteți un Iepure.
+							</p>
+							<div class="chinese-sgn-about__lucky-items lucky-items">
+								<ul class="lucky-items__list">
+									<li class="lucky-items__item"><strong>Numele chinezesc: </strong>"Tu" (兔),</li>
+									<li class="lucky-items__item"><strong>Culori norocoase: </strong>roșu, roz, violet, albastru
+									</li>
+									<li class="lucky-items__item"><strong>Numerele norocoase: </strong>3, 4, 6</li>
+									<li class="lucky-items__item"><strong>Anotimpul: </strong>primavara</li>
+									<li class="lucky-items__item"><strong>Luna: </strong>martie</li>
+									<li class="lucky-items__item"><strong>Flori norocoase: </strong>crin de august și iasomie
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<!-- FOOTER HTML -->
 		<load src="src/html/footer.html" />
 	</div>
 
 	<script type="module" src="../src/js/main.js"></script>
-	<script type="module" src="../src/js/chinese.js"></script>
 </body>
 
 </html>

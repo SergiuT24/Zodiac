@@ -1,3 +1,4 @@
+// MAIN SELECT CHINESE SIGN CLASS
 .page {
 	// .page__main-chinese-title
 	&__main-chinese-title {
@@ -109,4 +110,80 @@
 		align-items: center;
 	}
 }
-
+//========================================================================================================================================================
+// CLASS FOR SIGN PAGE SELECTED
+.wrapper-chinese {
+	// background: linear-gradient(1deg, rgba(2,0,36,1) 0%, rgb(95, 3, 15) 42%);
+	background: linear-gradient(to bottom, #5a0101, #190a05);
+	color: $mainWhite;
+	position: relative;
+}
+.page-chinese {
+		padding: 150px 0px 370px 0px;
+		// .page-chinese__about-chinese-sgn
+		&__about-chinese-sgn {
+		}
+}
+.leaves {
+	position: absolute;
+	top: 50px;
+	left: -30px;
+	img {
+	border-radius: 200px;
+	width: 300px;
+	height: 300px;
+	}
+	rotate: 300deg;
+}
+.chinese-sgn-about {
+		// .chinese-sgn-about__container
+		&__container {
+		}
+		// .chinese-sgn-about__body
+		&__body {
+			display: flex;
+			gap: 50px;
+		}
+		// .chinese-sgn-about__column
+		&__column {
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+		}
+		// .chinese-sgn-about__column-image
+		&__column-image {
+			flex: 0 0 50%;
+			align-items: center;
+		}	
+		// .chinese-sgn-about__image
+		&__image {
+			width: 320px;
+			height: 320px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}	
+		// .chinese-sgn-about__years
+		&__years {
+				margin: 0px 0px 50px 0px;
+				font-size: 22px;
+				font-weight: bold;
+				line-height: 30px;
+		}
+		// .chinese-sgn-about__lucky-items
+		&__lucky-items {
+		}
+}
+.lucky-items {
+	// .lucky-items__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	// .lucky-items__item
+	&__item {
+	}
+}
+//========================================================================================================================================================
