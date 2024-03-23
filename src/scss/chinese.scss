@@ -114,25 +114,41 @@
 // CLASS FOR SIGN PAGE SELECTED
 .wrapper-chinese {
 	position: relative;
-	background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, #DC291E);
+	background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, #6c1424);
 }
 .page-chinese {
 	color: #fff;
-	padding: 150px 0px 20px 0px;
+	padding: 100px 0px 20px 0px;
 	// .page-chinese__about-chinese-sgn
 	&__about-chinese-sgn {
 	}
 	// .page-chinese__description-chinese
 	&__description-chinese {
-		margin-top: 100px;
+		margin-top: 60px;
 	}
 	// .page-chinese__chinese-match
 	&__chinese-match {
-		margin: 100px 0px 50px;
+		margin: 60px 0px 60px;
 	}
 	// .page__chinese-horoscope
 	&__chinese-horoscope {
-		margin: 100px 0px 100px;
+		margin: 60px 0px 60px;
+	}
+	@media (min-width: 479.98px) {
+		&__description-chinese {
+			margin-top: 100px;
+		}
+		&__chinese-match {
+			margin: 100px 0px 50px;
+		}
+		&__chinese-horoscope {
+			margin: 100px 0px 100px;
+		}
+	}
+}
+@media (min-width: 479.98px) {
+	.page-chinese {
+		padding: 150px 0px 20px 0px;
 	}
 }
 .chinese-sgn-about {
@@ -142,6 +158,7 @@
 		// .chinese-sgn-about__body
 		&__body {
 			display: flex;
+			flex-direction: column;
 			gap: 50px;
 		}
 		// .chinese-sgn-about__column
@@ -157,8 +174,8 @@
 		}	
 		// .chinese-sgn-about__image
 		&__image {
-			width: 320px;
-			height: 320px;
+			width: 150px;
+			height: 150px;
 			img {
 				width: 100%;
 				height: 100%;
@@ -167,12 +184,30 @@
 		// .chinese-sgn-about__years
 		&__years {
 				margin: 0px 0px 50px 0px;
-				font-size: 22px;
+				font-size: 18px;
 				font-weight: bold;
 				letter-spacing: 2px;
 		}
 		// .chinese-sgn-about__lucky-items
 		&__lucky-items {
+		}
+		@media (min-width: 767.98px) {
+			&__body {
+				flex-direction: row;
+			}
+			&__image {
+				width: 320px;
+				height: 320px;
+			}
+		}
+		@media (min-width: 479.98px) {
+			&__image {
+				width: 250px;
+				height: 250px;
+			}
+			&__years {
+				font-size: 22px;
+			}
 		}
 }
 .lucky-items {
@@ -185,8 +220,17 @@
 	// .lucky-items__item
 	&__item {
 		letter-spacing: 2px;
-		@extend %specialElite;
-		font-size: 18px;
+		@extend %popupFont;
+		strong {
+			font-size: 16px;
+		}
+	}
+	@media (min-width: 479.98px) {
+		&__item {
+			strong {
+				font-size: 18px;
+			}
+		}
 	}
 }
 //========================================================================================================================================================
@@ -199,16 +243,16 @@
 	&__body {
 		background: rgba(13, 21, 38, 0.48);
 		border-radius: 24px;
-		padding: 40px 40px;
+		padding: 20px 20px;
 		box-shadow: 0px 12px 20px 5px #060c1f;
 		border: 3px solid rgba(238, 238, 238, 0.2);
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 10px;
 	}
 	// .horoscope-chinese__title
 	&__title {
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 	// .horoscope-chinese__work
@@ -219,8 +263,9 @@
 		display: inline-flex;
 		gap: 20px;
 		align-items: center;
-		font-size: 20px;
+		font-size: 16px;
 		margin-bottom: 10px;
+		font-weight: bold;
 	}
 	// .horoscope-chinese__prediction
 	&__prediction {
@@ -238,16 +283,23 @@
 	// .horoscope-chinese__love
 	&__love {
 	}
+	@media (min-width: 767.98px) {
+		&__body {
+			padding: 40px 40px;
+		}
+	}
+	@media (min-width: 479.98px) {
+		&__body {
+			gap: 30px;
+		}
+		&__title {
+			font-size: 24px;
+		}
+		&__subtitile {
+			font-size: 18px;
+		}
+	}
 }
-.ri-briefcase-4-fill {
-}
-.ri-money-dollar-circle-fill {
-}
-.ri-mental-health-fill {
-}
-.ri-heart-fill {
-}
-
 //========================================================================================================================================================
 //CHINESE SIGN DESCRIPTION
 .chinese-description {
@@ -269,7 +321,7 @@
 	}
 	// .chinese-description__title
 	&__title {
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: bold;
 		margin: 40px 0px 40px;
 	}
@@ -294,7 +346,7 @@
 	&__table-title {
 		border-bottom: 1px solid #d9d9d9;
 		td {
-			padding: 30px;
+			padding: 20px 5px;
 			text-align: center;
 			&:not(:last-child) {
 				border-right: 1px solid #d9d9d9;
@@ -314,6 +366,16 @@
 			}
 		}
 	}
+	@media (min-width: 479.98px) {
+		&__title {
+			font-size: 24px;
+		}
+		&__table-title {
+			td {
+				padding: 30px;
+			}
+			}
+	}
 }
 //========================================================================================================================================================
 .match-chinese {
@@ -327,14 +389,14 @@
 	&__love {
 		margin: 50px 0px 0px;
 		display: flex;
-		justify-content: space-evenly;
+		flex-direction: column;
+		gap: 50px;
 	}
 	// .match-chinese__column
 	&__column {
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
-		
+		gap: 20px;
 		border-radius: 24px;
 		background: rgba(13, 21, 38, 0.48);
 		box-shadow: 0 2px 16px hsla(0, 0%, 100%, 0.15);
@@ -355,7 +417,8 @@
 	&__box {
 		padding: 0px 40px 20px;
 		display: flex;
-		gap: 40px;
+		justify-content: center;
+		gap: 20px;
 	}
 	// .match-chinese__block
 	&__block {
@@ -369,8 +432,10 @@
 	}
 	// .match-chinese__photo
 	&__photo {
-		width: 125px;
-		height: 125px;
+		display: flex;
+		align-self: center;
+		width: 65px;
+		height: 65px;
 		border-radius: 63px;
 		img {
 			filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(0%) contrast(100%);
@@ -381,5 +446,29 @@
 	// .match-chinese__name
 	&__name {
 		text-align: center;
+	}
+	@media (min-width: 1087px) {
+		&__love {
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+	}
+	@media (min-width: 767.98px) {
+		&__photo {
+			width: 125px;
+			height: 125px;
+		}
+	}
+	@media (min-width: 479.98px) {
+		&__photo {
+			width: 85px;
+			height: 85px;
+		}
+		&__box {
+			gap: 40px;
+		}
+		&__column {
+			gap: 30px;
+		}
 	}
 }
