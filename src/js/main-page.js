@@ -9,7 +9,7 @@ const zodiacSigns = [
 	"Balanță", "Scorpion", "Săgetător", "Capricorn", "Vărsător", "Pește"
 ];
 
-fetch('https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/horoscopeinfo.json')
+fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
 	.then(response => response.json()) // Parse response as JSON
 	.then(jsonData => {
 		zodiacSigns.forEach(signName => {
