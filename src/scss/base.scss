@@ -1,13 +1,13 @@
 // BASE STYLE
+.background-html-index {
+	background: linear-gradient(to bottom, #001e28, #1f4037);
+}
+.background-html-chinese {
+	background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, #6c1424);
+}	
 body {
 	color: #fff;
 	@extend %baseFont;
-}
-.page-zodiac {
-	background: linear-gradient(to bottom, #001e28, #1f4037);
-}
-.page-zodiac-chinese {
-	background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, #6c1424);
 }
 [class*="__container"] {
 	max-width: 1270px;

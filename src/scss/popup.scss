@@ -31,9 +31,6 @@
 .popup-body {
 	max-height: calc(100vh - 60px);
 	overflow-y: scroll;
-	p {
-		display: none;
-	}
 	&:last-child {
 		margin-bottom: 0px;
 	}
