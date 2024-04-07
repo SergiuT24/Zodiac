@@ -9,11 +9,6 @@ const zodiacSigns = [
 	"Balanță", "Scorpion", "Săgetător", "Capricorn", "Vărsător", "Pește"
 ];
 
-const dailySigns = [
-	"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
-	"balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti"
-];
-
 function getCurrentPageId() {
 	const currentPageUrl = window.location.href;
 	const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
@@ -30,7 +25,6 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 	.then(jsonData => {
 		zodiacSigns.forEach(signName => {
 			const signElement = document.getElementById(`${signName}`);
-			signElement.innerHTML = `${jsonData[formattedDate][signName]}`;
 			const myPopup = new Popup({
 				id: "my-popup",
 				title: `
@@ -48,10 +42,6 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 				myPopup.show();
 			});
 		});
-		// dailySigns.forEach(dailySign => {
-		// 	const signDay = document.getElementById(`${dailySign}`);
-		// 	signDay.innerHTML = ``
-		// });
 	})
 	.catch(error => {
 		console.error('Error fetching JSON:', error);
