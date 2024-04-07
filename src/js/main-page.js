@@ -36,17 +36,6 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 		console.error('Error fetching JSON:', error);
 	});
 
-
-
-
-
-
-
-
-
-// // //========================================================================================================================================================
-// // POPUPSECTION
-
 // // // JSON QOUTES
 // // // import horoscopePrediction from '../js/horoscope-prediction.json' assert { type: 'json' };
 // // import dayQuotes from '../js/day-quotes.json' assert { type: 'json' };
