@@ -5,23 +5,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	const options = { year: 'numeric', month: 'long', day: 'numeric' };
 	const romanianDate = new Date().toLocaleDateString('ro-RO', options);
 
-	function getCurrentPageId() {
-		const currentPageUrl = window.location.href;
-		const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
-		return pageId;
-	}
+	// function getCurrentPageId() {
+	// 	const currentPageUrl = window.location.href;
+	// 	const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
+	// 	return pageId;
+	// }
 
-	const currentPageId = getCurrentPageId().slice(0, -5);
-
-	const signDate = document.getElementById('current-date');
-	if (signDate) {
-		signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${currentPageId}:`;
-	}
+	// const currentPageId = getCurrentPageId().slice(0, -5);
 
 	const zodiacSigns = [
 		"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
 		"balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti"
 	];
+
+	const signDate = document.getElementById('current-date');
 
 	fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
 		.then(response => response.json())
@@ -29,7 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			zodiacSigns.forEach(signName => {
 				const signElement = document.getElementById(`${signName}`);
 				if (signElement) {
-					signElement.innerHTML = `${jsonData[formattedDate][signName]}`
+					signElement.innerHTML = `${jsonData[formattedDate][signName]}`;
+					signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${signName}:`;
 				}
 			});
 		})
