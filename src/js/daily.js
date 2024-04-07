@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			matchesIds.forEach(matchesId => {
 				const imgElement = document.getElementById(matchesId);
-				const iconIndex = jsonData[formattedDate][currentPageId][signName][matchesId];
+				const iconIndex = jsonData[formattedDate][currentPageId][matchesId];
 				imgElement.src = `/icons/match/${iconIndex}.svg`;
 				imgElement.alt = zodiacSigns[iconIndex - 1];
 			});
