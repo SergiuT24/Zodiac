@@ -5,8 +5,8 @@ const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const romanianDate = new Date().toLocaleDateString('ro-RO', options);
 
 const zodiacSigns = [
-	"Berbec", "Taur", "Gemeni", "Rac", "Leu", "Fecioară",
-	"Balanță", "Scorpion", "Săgetător", "Capricorn", "Vărsător", "Pește"
+	"Berbec", "Taur", "Gemeni", "Rac", "Leu", "Fecioara",
+	"Balanta", "Scorpion", "Sagetator", "Capricorn", "Varsator", "Pesti"
 ];
 
 fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
@@ -24,7 +24,7 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 				content: `
 						<div class="popup-body_sign">Zodia: ${signName}</div>
 						<div class="popup-body_day">Horoscopul: ${romanianDate}</div>
-						<div class="popup-body_text">${jsonData[formattedDate][signName]}<br><br><a class="popup-body_link" href="/zodii/${signName.toLowerCase()}.html">Află mai multe despre ${signName}</a></div>
+						<div class="popup-body_text">${jsonData[formattedDate][signName.toLowerCase()]}<br><br><a class="popup-body_link" href="/zodii/${signName.toLowerCase()}.html">Află mai multe despre ${signName}</a></div>
 						`,
 			});
 			signElement.addEventListener('click', () => {
