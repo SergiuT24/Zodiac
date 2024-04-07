@@ -16,8 +16,8 @@ const signDate = document.getElementById('current-date');
 signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${currentPageId}:`;
 
 const zodiacSigns = [
-	"Berbec", "Taur", "Gemeni", "Rac", "Leu", "Fecioară",
-	"Balanță", "Scorpion", "Săgetător", "Capricorn", "Vărsător", "Pește"
+	"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
+	"balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti"
 ];
 
 fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
