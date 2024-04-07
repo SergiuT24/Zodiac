@@ -1,36 +1,42 @@
 import dayjs from 'dayjs';
 
-const formattedDate = dayjs().format('YYYY-MM-DD');
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-const romanianDate = new Date().toLocaleDateString('ro-RO', options);
+document.addEventListener('DOMContentLoaded', function () {
+	const formattedDate = dayjs().format('YYYY-MM-DD');
+	const options = { year: 'numeric', month: 'long', day: 'numeric' };
+	const romanianDate = new Date().toLocaleDateString('ro-RO', options);
 
-function getCurrentPageId() {
-	const currentPageUrl = window.location.href;
-	const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
-	return pageId;
-}
+	function getCurrentPageId() {
+		const currentPageUrl = window.location.href;
+		const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
+		return pageId;
+	}
 
-const currentPageId = getCurrentPageId().slice(0, -5);
+	const currentPageId = getCurrentPageId().slice(0, -5);
 
-const signDate = document.getElementById('current-date');
-signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${currentPageId}:`;
+	const signDate = document.getElementById('current-date');
+	if (signDate) {
+		signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${currentPageId}:`;
+	}
 
-const zodiacSigns = [
-	"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
-	"balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti"
-];
+	const zodiacSigns = [
+		"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
+		"balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti"
+	];
 
-fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
-	.then(response => response.json())
-	.then(jsonData => {
-		zodiacSigns.forEach(signName => {
-			const signElement = document.getElementById(`${signName}`);
-			signElement.innerHTML = `${jsonData[formattedDate][signName]}`
+	fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
+		.then(response => response.json())
+		.then(jsonData => {
+			zodiacSigns.forEach(signName => {
+				const signElement = document.getElementById(`${signName}`);
+				if (signElement) {
+					signElement.innerHTML = `${jsonData[formattedDate][signName]}`
+				}
+			});
+		})
+		.catch(error => {
+			console.error('Error fetching JSON:', error);
 		});
-	})
-	.catch(error => {
-		console.error('Error fetching JSON:', error);
-	});
+});
 //========================================================================================================================================================
 
 // // RANDOM TODAY'S MATCHES
