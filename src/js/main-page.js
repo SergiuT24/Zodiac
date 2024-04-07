@@ -9,17 +9,6 @@ const zodiacSigns = [
 	"Balanță", "Scorpion", "Săgetător", "Capricorn", "Vărsător", "Pește"
 ];
 
-function getCurrentPageId() {
-	const currentPageUrl = window.location.href;
-	const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
-	return pageId;
-}
-
-const currentPageId = getCurrentPageId().slice(0, -5);
-
-const signDate = document.getElementById('current-date');
-signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${currentPageId}:`;
-
 fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}.json`)
 	.then(response => response.json())
 	.then(jsonData => {
