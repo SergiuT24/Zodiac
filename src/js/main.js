@@ -48,7 +48,7 @@ window.addEventListener('load', function () {
 							<div class="menu__item for-remove">
 								<div class="menu__subhoroscope-list">
 									<div class="menu__subhoroscope-column">
-										<a class="menu__subhoroscope-link" href="/horoscope-html/zilnic">Zilnic</a>
+										<a class="menu__subhoroscope-link" href="/horoscop/zilnic">Zilnic</a>
 										<a class="menu__subhoroscope-link" href="/signs-html/Taur.html">Saptaminal</a>
 										<a class="menu__subhoroscope-link" href="/signs-html/Gemeni.html">Lunar</a>
 									</div>
@@ -104,20 +104,20 @@ window.addEventListener('load', function () {
 							<div class="menu__item for-remove">
 								<div class="menu__subnav-signs">
 									<div class="menu__subnav-signs-column">
-										<a class="menu__subnav-signs-link" href="/signs-html/Berbec.html">Berbec</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Taur.html">Taur</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Gemeni.html">Gemeni</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Rac.html">Rac</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Leu.html">Leu</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Fecioară.html">Fecioară</a>
+										<a class="menu__subnav-signs-link" href="/zodii/berbec.html">Berbec</a>
+										<a class="menu__subnav-signs-link" href="/zodii/taur.html">Taur</a>
+										<a class="menu__subnav-signs-link" href="/zodii/gemeni.html">Gemeni</a>
+										<a class="menu__subnav-signs-link" href="/zodii/rac.html">Rac</a>
+										<a class="menu__subnav-signs-link" href="/zodii/leu.html">Leu</a>
+										<a class="menu__subnav-signs-link" href="/zodii/fecioara.html">Fecioară</a>
 									</div>
 									<div class="menu__subnav-signs-column">
-										<a class="menu__subnav-signs-link" href="/signs-html/Balanță.html">Balanță</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Scorpion.html">Scorpion</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Săgetător.html">Săgetător</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Capricorn.html">Capricorn</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Vărsător.html">Vărsător</a>
-										<a class="menu__subnav-signs-link" href="/signs-html/Pește.html">Pește</a>
+										<a class="menu__subnav-signs-link" href="/zodii/balanta.html">Balanță</a>
+										<a class="menu__subnav-signs-link" href="/zodii/scorpion.html">Scorpion</a>
+										<a class="menu__subnav-signs-link" href="/zodii/sagetator.html">Săgetător</a>
+										<a class="menu__subnav-signs-link" href="/zodii/capricorn.html">Capricorn</a>
+										<a class="menu__subnav-signs-link" href="/zodii/varsator.html">Vărsător</a>
+										<a class="menu__subnav-signs-link" href="/zodii/pesti.html">Pește</a>
 									</div>
 								</div>
 							</div>

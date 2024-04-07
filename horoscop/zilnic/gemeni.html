@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+	<!--=============== REMIXICONS ===============-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+	<title>Zodiac</title>
+</head>
+
+<body>
+	<div class="wrapper-forecast">
+		<!-- HEADER HTML -->
+		<load src="src/html/header.html" />
+		<main class="forecast">
+			<!-- FORECAST-SECTION -->
+			<section class="forecast__traits forecast">
+				<div class="forecast__container">
+					<div class="forecast__body">
+						<div class="forecast__select">
+							<div class="forecast__horoscope-select horoscope-select">
+								<div class="horoscope-select__title">Horoscopul zilnic</div>
+								<div class="horoscope-select__choose-sign choose-sign">
+									<label class="choose-sign__title" for="select-sign">Horscopul Gemeni</label>
+									<select onchange="window.location.href=this.value;" class="choose-sign__select"
+										id="select-sign" name="select-sign">
+										<option value="/horoscope/zilnic.html" selected>Schimbă Zodia</option>
+										<option value="/horoscop/zilnic/berbec.html">Berbec</option>
+										<option value="/horoscop/zilnic/taur.html">Taur</option>
+										<option value="/horoscop/zilnic/gemeni.html">Gemeni</option>
+										<option value="/horoscop/zilnic/rac.html">Rac</option>
+										<option value="/horoscop/zilnic/leu.html">Leu</option>
+										<option value="/horoscop/zilnic/fecioara.html">Fecioară</option>
+										<option value="/horoscop/zilnic/balanta.html">Balanță</option>
+										<option value="/horoscop/zilnic/scorpion.html">Scorpion</option>
+										<option value="/horoscop/zilnic/sagetator.html">Săgetător</option>
+										<option value="/horoscop/zilnic/capricorn.html">Capricorn</option>
+										<option value="/horoscop/zilnic/varsator.html">Vărsător</option>
+										<option value="/horoscop/zilnic/pesti.html">Pește</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="forecast-daily__body">
+							<div class="forecast-daily__column-prediction">
+								<div class="forecast-daily__title">Horoscopul zilei de 27 Martie 2024 pentru Gemeni:</div>
+								<div class="forecast-daily__prediction">Este posibil sa te necăjească afecțiunile vechi legate
+									de
+									sistemul digestiv, stomac sau sistem osos si articular. Tentatita de a te implica in mai
+									multe
+									treburi cotidiene este mare si paguboasa la acest final de saptamana. Fii prudent si
+									ingrijeste-te
+									corespunzator! Cei dragi sau colegii de munca, daca lucrezi in aceste zile te pot ajuta cu
+									plăcere.
+									Acceptă-le sprijinul!
+								</div>
+							</div>
+							<div class="forecast-daily__column-photo">
+								<p class="forecats-daily__photo-name">Gemeni</p>
+								<div class="forecast-daily__photo">
+									<img src="/public/img/signs-big-item/Gemeni.svg" alt="Gemeni">
+								</div>
+							</div>
+						</div>
+						<div class="selected__forecast">
+							<div class="column__forecast match">
+								<div class="match__title">Potrivirile de astazi:</div>
+								<div class="match__box-content">
+									<div class="box-content__column">
+										<div class="box-content__title"><i class="ri-heart-fill"
+												style="color: #f16ea1; font-size: 20px; padding-right: 3px;"></i>
+											<p>Dragoste</p>
+										</div>
+										<div class="box-content__photo box-content__photo-love"><img id="love" src="" alt="">
+										</div>
+										<div class="box-content__name" id="love-name"></div>
+									</div>
+									<div class="box-content__column">
+										<div class="box-content__title"><i class="ri-briefcase-4-fill"
+												style="color: #48c6af; font-size: 20px; padding-right: 3px;"></i>
+											<p>Carieră</p>
+										</div>
+										<div class="box-content__photo box-content__photo-career"><img id="career" src="" alt="">
+										</div>
+										<div class="box-content__name" id="career-name"></div>
+									</div>
+									<div class="box-content__column">
+										<div class="box-content__title"><i class="ri-group-fill"
+												style="color: #9980f1; font-size: 20px; padding-right: 3px;"></i>
+											<p>Prietenie</p>
+										</div>
+										<div class="box-content__photo box-content__photo-friend"><img id="friend" src="" alt="">
+										</div>
+										<div class="box-content__name" id="friend-name"></div>
+									</div>
+								</div>
+							</div>
+							<div class="column__forecast mood">
+								<div class="mood__title">Ratingul zilei de astazi<br>pentru spiritul tau:</div>
+								<div class="mood__content">
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Succes</div>
+										<div class="column-mood__stars" id="success">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Fericire</div>
+										<div class="column-mood__stars" id="happiness">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Sex</div>
+										<div class="column-mood__stars" id="sex">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Dispoziție</div>
+										<div class="column-mood__stars" id="provision">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Stres</div>
+										<div class="column-mood__stars" id="stress">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+									<div class="mood__column-mood">
+										<div class="column-mood__name">Erudiție</div>
+										<div class="column-mood__stars" id="erudition">
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+											<div class="ri-star-fill"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER HTML -->
+		<load src="src/html/footer.html" />
+	</div>
+	<script type="module" src="../../src/js/main.js"></script>
+	<script type="module" src="../../src/js/daily.js"></script>
+</body>
+
+</html>

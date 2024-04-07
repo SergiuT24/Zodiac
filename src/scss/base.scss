@@ -1,7 +1,4 @@
 // BASE STYLE
-.background-html-chinese {
-	background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, #6c1424);
-}	
 body {
 	color: #fff;
 	@extend %baseFont;
@@ -13,8 +10,25 @@ body {
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
-	/* z-index usage is up to you.. although there is no need of using it because the default stack context will work. */
-	z-index: -1; // this is optional
+	z-index: -1;
+}
+.bg-chinese {
+	background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, #6c1424);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -1;
+}
+.bg-space {
+	background: url(/public/img/signs-big-item/signs-background/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -1;
 }
 [class*="__container"] {
 	max-width: 1270px;
