@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	const options = { year: 'numeric', month: 'long', day: 'numeric' };
 	const romanianDate = new Date().toLocaleDateString('ro-RO', options);
 
-	// function getCurrentPageId() {
-	// 	const currentPageUrl = window.location.href;
-	// 	const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
-	// 	return pageId;
-	// }
+	function getCurrentPageId() {
+		const currentPageUrl = window.location.href;
+		const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
+		return pageId;
+	}
 
-	// const currentPageId = getCurrentPageId().slice(0, -5);
+	const currentPageId = getCurrentPageId().slice(0, -5);
 
 	const zodiacSigns = [
 		"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
@@ -26,25 +26,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			zodiacSigns.forEach(signName => {
 				const signElement = document.getElementById(`${signName}`);
 				if (signElement) {
-					signElement.innerHTML = `${jsonData[formattedDate][signName]}`;
+					signElement.innerHTML = `${jsonData[formattedDate][signName]['horoscope']}`;
 					signDate.innerHTML = `Horoscopul zilei de ${romanianDate} pentru ${signName}:`;
 				}
+			});
+
+			const matchesIds = ["love", "career", "friend"];
+
+			matchesIds.forEach(matchesId => {
+				const imgElement = document.getElementById(matchesId);
+				const iconIndex = jsonData[formattedDate][currentPageId][signName][matchesId];
+				imgElement.src = `/icons/match/${iconIndex}.svg`;
+				imgElement.alt = zodiacSigns[iconIndex - 1];
 			});
 		})
 		.catch(error => {
 			console.error('Error fetching JSON:', error);
 		});
 });
-//========================================================================================================================================================
 
-// // RANDOM TODAY'S MATCHES
-// const matchesIds = ["love", "career", "friend"];
-// matchesIds.forEach(matchesId => {
-// 	const imgElement = document.getElementById(matchesId);
-// 	const iconIndex = currentPageData[currentDate][matchesId];
-// 	imgElement.src = `/icons/match/${iconIndex}.svg`;
-// 	imgElement.alt = signs[iconIndex - 1];
-// });
 
 // // NAME FOR PHOTO
 // const matchesNameIds = ["love-name", "career-name", "friend-name"];

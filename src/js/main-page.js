@@ -24,7 +24,7 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 				content: `
 						<div class="popup-body_sign">Zodia: ${signName}</div>
 						<div class="popup-body_day">Horoscopul: ${romanianDate}</div>
-						<div class="popup-body_text">${jsonData[formattedDate][signName]}<br><br><a class="popup-body_link" href="/zodii/${signName}.html">Află mai multe despre ${signName.charAt(0).toUpperCase() + signName.slice(1)}</a></div>
+						<div class="popup-body_text">${jsonData[formattedDate][signName]['horoscope']}<br><br><a class="popup-body_link" href="/zodii/${signName}.html">Află mai multe despre ${signName.charAt(0).toUpperCase() + signName.slice(1)}</a></div>
 						`,
 			});
 			signElement.addEventListener('click', () => {
