@@ -40,6 +40,19 @@ document.addEventListener('DOMContentLoaded', function () {
 						imgElement.alt = photoName;
 						nameElement.innerHTML = photoName;
 					});
+
+					const containerIds = ["success", "happiness", "sex", "provision", "stress", "erudition"];
+
+					containerIds.forEach(containerId => {
+						const starContainer = document.getElementById(containerId);
+						const stars = starContainer.querySelectorAll('.ri-star-fill');
+
+						const numYellowStars = jsonData[formattedDate][signName][containerId];
+
+						for (let i = 0; i < numYellowStars; i++) {
+							stars[i].classList.add("yellow-for-stars");
+						}
+					});
 				}
 			});
 		})
@@ -47,28 +60,3 @@ document.addEventListener('DOMContentLoaded', function () {
 			console.error('Error fetching JSON:', error);
 		});
 });
-
-
-// // NAME FOR PHOTO
-// const matchesNameIds = ["love-name", "career-name", "friend-name"];
-
-// matchesNameIds.forEach(matchesNameId => {
-// 	const [prefix, suffix] = matchesNameId.split('-');
-// 	const nameElement = document.getElementById(matchesNameId);
-// 	const imgIndex = currentPageData[currentDate][prefix];
-// 	nameElement.innerHTML = `${signs[imgIndex - 1]}`;
-// });
-// //========================================================================================================================================================
-// // RANDOM RATING STARS OF MOOD
-// const containerIds = ["success", "happiness", "sex", "provision", "stress", "erudition"];
-
-// containerIds.forEach(containerId => {
-// 	const starContainer = document.getElementById(containerId);
-// 	const stars = starContainer.querySelectorAll('.ri-star-fill');
-
-// 	const numYellowStars = currentPageData[currentDate][containerId];
-
-// 	for (let i = 0; i < numYellowStars; i++) {
-// 		stars[i].classList.add("yellow-for-stars");
-// 	}
-// });
