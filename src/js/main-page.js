@@ -31,16 +31,12 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 				myPopup.show();
 			});
 		});
+
+		document.getElementById('block-quote').innerHTML = `Citatul zilei: ${jsonData[formattedDate]['qoute']['text']}`;
+
+		document.getElementById('block-author').innerHTML = `${jsonData[formattedDate]['qoute']['author']}`;
 	})
 	.catch(error => {
 		console.error('Error fetching JSON:', error);
 	});
 
-// // // JSON QOUTES
-// // // import horoscopePrediction from '../js/horoscope-prediction.json' assert { type: 'json' };
-// // import dayQuotes from '../js/day-quotes.json' assert { type: 'json' };
-// // // QOUTE SECTION
-// // const quote = document.getElementById('block-quote');
-// // quote.innerHTML = `Citatul zilei: ${dayQuotes[formattedDate]["quote"]}`;
-// // const author = document.getElementById('block-author');
-// // author.innerHTML = `${dayQuotes[formattedDate]["author"]}`;

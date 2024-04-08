@@ -5,14 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const options = { year: 'numeric', month: 'long', day: 'numeric' };
 	const romanianDate = new Date().toLocaleDateString('ro-RO', options);
 
-	// function getCurrentPageId() {
-	// 	const currentPageUrl = window.location.href;
-	// 	const pageId = currentPageUrl.substring(currentPageUrl.lastIndexOf("/") + 1);
-	// 	return pageId;
-	// }
-
-	// const currentPageId = getCurrentPageId().slice(0, -5);
-
 	const zodiacSigns = [
 		"berbec", "taur", "gemeni", "rac", "leu", "fecioara",
 		"balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti"
