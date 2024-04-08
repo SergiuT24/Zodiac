@@ -33,9 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 					matchesIds.forEach(matchesId => {
 						const imgElement = document.getElementById(matchesId);
+						const nameElement = document.getElementById(`${matchesId}-name`);
 						const iconIndex = jsonData[formattedDate][signName][matchesId];
+						const photoName = zodiacSigns[iconIndex - 1];
 						imgElement.src = `/icons/match/${iconIndex}.svg`;
-						imgElement.alt = zodiacSigns[iconIndex - 1];
+						imgElement.alt = photoName;
+						nameElement.innerHTML = photoName;
 					});
 				}
 			});
