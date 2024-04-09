@@ -32,9 +32,9 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 			});
 		});
 
-		document.getElementById('block-quote').innerHTML = `Citatul zilei: ${jsonData[formattedDate]['qoute']['text']}`;
+		document.getElementById('block-quote').innerHTML = `Citatul zilei: ${jsonData[formattedDate]['quote']['text']}`;
 
-		document.getElementById('block-author').innerHTML = `${jsonData[formattedDate]['qoute']['author']}`;
+		document.getElementById('block-author').innerHTML = `${jsonData[formattedDate]['quote']['author']}`;
 	})
 	.catch(error => {
 		console.error('Error fetching JSON:', error);
