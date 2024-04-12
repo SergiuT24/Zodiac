@@ -13,7 +13,6 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "dayjs": "^1.11.10",
     "normalize.css": "^8.0.1",
     "vite-plugin-html-inject": "^1.1.2"
   }
