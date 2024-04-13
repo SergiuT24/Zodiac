@@ -1,88 +1,38 @@
-// DEFAULT POPUPCLASS
 .popup {
-}
-.my-popup {
-}
-.fade-out {
+	display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 65%;
+   z-index: 9999;
+   background: rgba(13, 21, 38, 0.48);
+   border-radius: 24px;
+   padding: 42px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0px 12px 20px 5px rgba(6, 12, 31, 0.5);
+   border: 4px solid rgba(238, 238, 238, .2);
 }
 .popup-content {
-	background: rgb(13 21 38 / 48%) !important;
-	border-radius: 24px !important;
-	@extend %baseFont;
-	padding: 42px 42px;
-	backdrop-filter: blur(20px);
-	flex-direction: row;
-	align-items: center;
-	box-shadow: 0px 12px 20px 5px #060c1f;
-	border: 4px solid #eee3 !important;
+	display: flex;
+	gap: 60px;
 }
-.popup-header {
-	width: auto;
+.popup-column-one {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.popup-title {
-	margin: 0px;
+.popup-column-two {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	text-align: start;
+	font-weight: 300;
+	color: $mainWhite;
+	line-height: 1.5;
+	font-size: 17px;
 }
-.popup-close {
-	color: $mainWhite !important;
-	font-size: 50px !important;
-}
-//========================================================================================================================================================
-// MY POPUP CLASS IN BODY
-.popup-body {
-	max-height: calc(100vh - 60px);
-	overflow-y: scroll;
-	&:last-child {
-		margin-bottom: 0px;
-	}
-	// .popup-body_sign
-	&_sign {
-		font-weight: 800;
-		font-size: 30px;
-		color: $mainWhite;
-	}
-	// .popup-body_day
-	&_day {
-		font-size: 19px;
-		margin: 10px 0px 0px 0px;
-		font-weight: 600;
-		color: $mainWhite;
-	}
-	&_text {
-		text-align: start;
-		@extend %popupFont;
-		font-weight: 300;
-		margin-top: 15px;
-		margin-bottom: 0px;
-		line-height: 1.5;
-		padding: 0px 3px;
-		color: $mainWhite;
-		font-size: 17px;
-	}
-	&_link {
-		color: $mainWhite !important;
-		font-weight: 300 !important;
-		text-decoration: underline !important;
-		&:hover {
-			color: #aaffe3 !important;
-		}
-	}
-	@media (max-width: 479.98px) {
-		&_sign {
-			font-size: 22px;
-		}
-		// .popup-body_day
-		&_day {
-			font-size: 15px;
-			margin: 15px 0px 0px 0px;
-		}
-		&_text {
-			font-size: 16px;
-		}
-}
-}
-//========================================================================================================================================================
-// MY POPUP CLASS
-.pupup-imb-box {
+.popup-img {
 	width: 250px;
 	height: 250px;
 }
@@ -90,27 +40,71 @@
 	width: 100%;
 	filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
-// MEDIA
+.popup-title {
+	margin: 0px 0px 0px 0px;
+	font-weight: 800;
+	font-size: 30px;
+	color: #fff;
+}
+.popup-time {
+	font-size: 19px;
+	margin: 10px 0 0;
+	font-weight: 600;
+	color: #fff;
+}
+.popup-horoscope {
+	@extend %popupFont;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	padding: 0px 3px;
+}
+.popup-link {
+	@extend %popupFont;
+	font-weight: 300;
+	text-decoration: underline;
+	&:hover {
+		color: #aaffe3;
+	}
+}
+.popup-close {
+	position: absolute;
+   top: 0;
+   right: 10px;
+   cursor: pointer;
+	color: $mainWhite;
+	border: none;
+	background-color: transparent;
+	font-size: 50px;
+}
 @media (max-width: 1087px) {
-	.popup-content {
-		padding: 30px 0px 30px;
-	}
-}
-@media (max-width: 767.98px) {
-	.popup-content {
-		padding: 10px;
-	}
-	.pupup-imb-box {
-		width: 150px;
-		height: 150px;
-	}
-}
-@media (max-width: 479.98px) {
-	.pupup-imb-box {
+	.popup-img {
 		display: none;
 	}
 	.popup-content {
-		padding: 25px 3px;
-		flex-direction: row;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+@media (max-width: 767.98px) {
+	.popup-title {
+		font-size: 24px;
+	}
+	.popup-time {
+		font-size: 18px;
+	}
+	.popup-column-two {
+		gap: 20px;
+	}
+}
+@media (max-width: 479.98px) {
+	.popup {
+		padding: 22px;
+		width: 80%;
+	}
+	.popup-title {
+		font-size: 22px;
+	}
+	.popup-time {
+		font-size: 16px;
 	}
 }

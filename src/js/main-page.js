@@ -18,23 +18,36 @@ fetch(`https://aws-horoscope-base.s3.eu-central-1.amazonaws.com/${formattedDate}
 	.then(response => response.json())
 	.then(jsonData => {
 		zodiacSigns.forEach(signName => {
-			const signElement = document.getElementById(`${signName}`);
-			const myPopup = new Popup({
-				id: "my-popup",
-				title: `
-						<div class="pupup-imb-box">
-						<img class="pupup-img-sign" src="/img/zodiac-main-signs/${signName}.png" alt="${signName}">
-						</div>
-						`,
-				content: `
-						<div class="popup-body_sign">Zodia: ${signName}</div>
-						<div class="popup-body_day">Horoscopul: ${romanianDate}</div>
-						<div class="popup-body_text">${jsonData[formattedDate][signName]['horoscope']}<br><br><a class="popup-body_link" href="/zodii/${signName}.html">Află mai multe despre ${signName.charAt(0).toUpperCase() + signName.slice(1)}</a></div>
-						`,
+			const link = document.getElementById(signName);
+			link.addEventListener('click', function (e) {
+				e.preventDefault();
+				const popup = document.getElementById('popup');
+				const popupImage = document.getElementById('popupImage');
+				const popupTitle = document.getElementById('popupTitle');
+				const popupTime = document.getElementById('popupTime');
+				const popupHoroscope = document.getElementById('popupHoroscope');
+				const popupLink = document.getElementById('popupLink');
+				popupImage.innerHTML = `
+				<img class="pupup-img-sign" src="/img/zodiac-main-signs/${signName}.png" alt="${signName}">
+				`;
+				popupTitle.innerHTML = `
+				Zodia: ${signName}
+				`;
+				popupTime.innerHTML = `
+				Horoscopul: ${romanianDate}
+				`;
+				popupHoroscope.innerHTML = `
+				${jsonData[formattedDate][signName]['horoscope']}
+				`;
+				popupLink.innerHTML = `
+				<a class="popup-body_link" href="/zodii/${signName}.html">Află mai multe despre ${signName.charAt(0).toUpperCase() + signName.slice(1)}</a>
+				`;
+				popup.style.display = 'block';
 			});
-			signElement.addEventListener('click', () => {
-				myPopup.show();
-			});
+		});
+
+		document.getElementById('closePopup').addEventListener('click', function () {
+			document.getElementById('popup').style.display = 'none';
 		});
 
 		document.getElementById('block-quote').innerHTML = `Citatul zilei: ${jsonData[formattedDate]['quote']['text']}`;
