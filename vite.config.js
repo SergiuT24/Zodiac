@@ -8,6 +8,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
+				sitemap: resolve(__dirname, 'public/sitemap.xml'),
 				// HOROSCOPE DAILY
 				zilnic: resolve(__dirname, 'horoscop/zilnic.html'),
 				berbecZilnic: resolve(__dirname, 'horoscop/zilnic/berbec.html'),
