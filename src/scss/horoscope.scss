@@ -33,14 +33,50 @@
 	}
 }
 .horoscope-select {
+	// .horoscope-select__text
+	&__text {
+	}
 	// .horoscope-select__title
 	&__title {
 		font-size: 35px;
-		padding: 40px 0px 40px 40px;
 	}
-	// .horoscope-select__choose-sign
-	&__choose-sign {
-		padding: 0px 0px 30px 40px;
+	// .horoscope-select__subtitle
+	.horoscope-select__subtitle {
+		font-size: 22px;
+		margin: 40px 0px 0px;
+		text-align: center;
+	}
+	// .horoscope-select__body
+	&__body {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	// .horoscope-select__block
+	&__block {
+		display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 10px;
+      justify-content: center;
+		padding: 20px;
+	}
+	// .horoscope-select__sign
+	&__sign {
+		padding: 10px 2px 10px;
+		border: 1px solid rgba(238, 238, 238, 0.2);
+		border-radius: 20px;
+		text-align: center;
+		img {
+			filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+			width: 40px;
+			height: 40px;
+		}
+		&:hover {
+			background-color: #3a3737;
+		}
+	}
+	// .horoscope-select__name
+	&__name {
+		margin: 14px 0px 0px 0px;
 	}
 	@media (max-width: 1087px) {
 		&__title {
@@ -50,75 +86,6 @@
 	@media (max-width: 767.98px) {
 		&__title {
 			font-size: 24px;
-			padding-left: 20px;
-		}
-		&__choose-sign {
-			padding-left: 30px;
-		}
-	}
-}
-.choose-sign {
-	position: relative;
-	display: inline-flex;
-	gap: 20px;
-	:first-child {
-		display: flex;
-		align-items: center;
-	}
-	&::after {
-		content: '\25BC';
-		position: absolute;
-		top: 1px;
-		right: 2px;
-		padding: 16px;
-		background-color: #34495e;
-		transition: .25s all ease;
-		pointer-events: none;
-	}
-	&:hover::after {
-		color: #f39c12;
-	}
-	// .choose-sign__title
-	&__title {
-		font-size: 24px;
-		opacity: 0.9;
-	}
-	// .choose-sign__select
-	&__select {
-		width: 300px;
-		padding: 16px 64px 16px 16px;
-		background: #2c3e50;
-		color: $mainWhite;
-		cursor: pointer;
-		border-radius: 4px;
-		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-	}
-	@media (max-width: 1087px) {
-		&__title {
-			font-size: 18px;
-		}
-	}
-	@media (max-width: 767.98px) {
-		&__title {
-			font-size: 16px;
-		}
-	}
-}
-// Mobile CHOOSE_SIGN
-@media (max-width: 767.98px) {
-	.choose-sign {
-		flex-direction: column;
-		align-items: center;
-		&::after {
-			top: 40px;
-			right: 1px;
-			padding: 15.5px;
-		}
-		&__select {
-			width: 220px;
 		}
 	}
 }
