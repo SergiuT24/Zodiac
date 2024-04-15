@@ -79,13 +79,48 @@
 		margin: 14px 0px 0px 0px;
 	}
 	@media (max-width: 1087px) {
+		&__body {
+			display: flex;
+			flex-direction: column;
+		}
+		&__block {
+			grid-template-columns: repeat(6, 100px);
+			column-gap: 20px;
+		}
+		&__sign {
+			width: 100px;
+		}
 		&__title {
+			text-align: center;
 			font-size: 30px;
 		}
 	}
 	@media (max-width: 767.98px) {
+		&__block {
+			grid-template-columns: repeat(4, 80px);
+			column-gap: 10px;
+		}
+		&__sign {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 70px;
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
 		&__title {
 			font-size: 24px;
+		}
+		&__name {
+			width: fit-content;
+			font-size: 12px;
+		}
+	}
+	@media (max-width: 479.98px) {
+		&__block {
+			grid-template-columns: repeat(3, 80px);
 		}
 	}
 }
